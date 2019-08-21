@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!--
-Copyright (c) 1996-2016, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
+Copyright (c) 1996-2015, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
 
 F5, F5 Networks, the F5 logo, BIG-IP, 3-DNS, iControl, GLOBAL-SITE, SEE-IT, EDGE-FX, FireGuard, Internet Control Architecture, IP Application Switch, iRules, PACKET VELOCITY, SYN Check, CONTROL YOUR WORLD, OneConnect, ZoneRunner, uRoam, FirePass, and TrafficShield are registered trademarks or trademarks of F5 Networks, Inc., in the U.S. and certain other countries. 
 
@@ -94,13 +94,6 @@ All other trademarks mentioned in this document are the property of their respec
 				</xsd:restriction>
 			</xsd:complexContent>
 		</xsd:complexType>
-		<xsd:complexType name="Management.KeyCertificate.CertificateExtensionSequence">
-			<xsd:complexContent>
-				<xsd:restriction base='SOAP-ENC:Array'>
-					<xsd:attribute ref='SOAP-ENC:arrayType' wsdl:arrayType='tns:Management.KeyCertificate.CertificateExtension[]'/>
-				</xsd:restriction>
-			</xsd:complexContent>
-		</xsd:complexType>
 		<xsd:complexType name="Management.KeyCertificate.KeyTypeSequence">
 			<xsd:complexContent>
 				<xsd:restriction base='SOAP-ENC:Array'>
@@ -188,11 +181,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>ELLIPTIC_CURVE_SECP384R1</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="ELLIPTIC_CURVE_SECP521R1">
-					<xsd:annotation>
-						<xsd:documentation>ELLIPTIC_CURVE_SECP521R1</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:simpleType name="Management.KeyCertificate.ManagementModeType">
@@ -248,13 +236,6 @@ All other trademarks mentioned in this document are the property of their respec
 				</xsd:restriction>
 			</xsd:complexContent>
 		</xsd:complexType>
-		<xsd:complexType name="Management.KeyCertificate.CertificateExtensionSequenceSequence">
-			<xsd:complexContent>
-				<xsd:restriction base='SOAP-ENC:Array'>
-					<xsd:attribute ref='SOAP-ENC:arrayType' wsdl:arrayType='tns:Management.KeyCertificate.CertificateExtensionSequence[]'/>
-				</xsd:restriction>
-			</xsd:complexContent>
-		</xsd:complexType>
 		<xsd:complexType name="Management.KeyCertificate.X509DataSequence">
 			<xsd:complexContent>
 				<xsd:restriction base='SOAP-ENC:Array'>
@@ -298,12 +279,6 @@ All other trademarks mentioned in this document are the property of their respec
 				<xsd:element name="expiration_date" type="xsd:long"/>
 				<xsd:element name="subject" type="tns:Management.KeyCertificate.X509Data"/>
 				<xsd:element name="issuer" type="tns:Management.KeyCertificate.X509Data"/>
-			</xsd:sequence>
-		</xsd:complexType>
-		<xsd:complexType name="Management.KeyCertificate.CertificateExtension">
-			<xsd:sequence>
-				<xsd:element name="extension_type" type="tns:Management.KeyCertificate.CertificateExtensionType"/>
-				<xsd:element name="value" type="xsd:string"/>
 			</xsd:sequence>
 		</xsd:complexType>
 		<xsd:complexType name="Management.KeyCertificate.CertificateInformation">
@@ -421,25 +396,6 @@ All other trademarks mentioned in this document are the property of their respec
 				</xsd:restriction>
 			</xsd:complexContent>
 		</xsd:complexType>
-		<xsd:simpleType name="Management.KeyCertificate.CertificateExtensionType">
-			<xsd:restriction base="xsd:string">
-				<xsd:enumeration value="CERTIFICATE_EXTENSION_UNKNOWN">
-					<xsd:annotation>
-						<xsd:documentation>CERTIFICATE_EXTENSION_UNKNOWN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="CERTIFICATE_EXTENSION_NONE">
-					<xsd:annotation>
-						<xsd:documentation>CERTIFICATE_EXTENSION_NONE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="CERTIFICATE_EXTENSION_SAN">
-					<xsd:annotation>
-						<xsd:documentation>CERTIFICATE_EXTENSION_SAN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-			</xsd:restriction>
-		</xsd:simpleType>
 		<xsd:complexType name="Management.KeyCertificate.Certificate">
 			<xsd:sequence>
 				<xsd:element name="id" type="xsd:string"/>
@@ -562,17 +518,6 @@ All other trademarks mentioned in this document are the property of their respec
 <message name="Management.KeyCertificate.key_import_from_pem_v2Response">
 </message>
 
-<message name="Management.KeyCertificate.certificate_generate_with_extensionsRequest">
-	<part name="mode" type="tns:Management.KeyCertificate.ManagementModeType"/>
-	<part name="certs" type="tns:Management.KeyCertificate.CertificateSequence"/>
-	<part name="x509_data" type="tns:Management.KeyCertificate.X509DataSequence"/>
-	<part name="lifetime_days" type="tns:Common.ULongSequence"/>
-	<part name="extensions" type="tns:Management.KeyCertificate.CertificateExtensionSequenceSequence"/>
-	<part name="overwrite" type="xsd:boolean"/>
-</message>
-<message name="Management.KeyCertificate.certificate_generate_with_extensionsResponse">
-</message>
-
 <message name="Management.KeyCertificate.key_certificate_import_from_pemRequest">
 	<part name="mode" type="tns:Management.KeyCertificate.ManagementModeType"/>
 	<part name="ids" type="tns:Common.StringSequence"/>
@@ -660,14 +605,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<part name="file_names" type="tns:Common.StringSequence"/>
 </message>
 <message name="Management.KeyCertificate.get_certificate_subject_alternative_nameResponse">
-	<part name="return" type="tns:Common.StringSequence"/>
-</message>
-
-<message name="Management.KeyCertificate.get_certificate_request_subject_alternative_nameRequest">
-	<part name="mode" type="tns:Management.KeyCertificate.ManagementModeType"/>
-	<part name="files" type="tns:Common.StringSequence"/>
-</message>
-<message name="Management.KeyCertificate.get_certificate_request_subject_alternative_nameResponse">
 	<part name="return" type="tns:Common.StringSequence"/>
 </message>
 
@@ -802,16 +739,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<part name="overwrite" type="xsd:boolean"/>
 </message>
 <message name="Management.KeyCertificate.certificate_request_generateResponse">
-</message>
-
-<message name="Management.KeyCertificate.certificate_request_generate_with_extensionsRequest">
-	<part name="mode" type="tns:Management.KeyCertificate.ManagementModeType"/>
-	<part name="csrs" type="tns:Management.KeyCertificate.CertificateRequestSequence"/>
-	<part name="x509_data" type="tns:Management.KeyCertificate.X509DataSequence"/>
-	<part name="extensions" type="tns:Management.KeyCertificate.CertificateExtensionSequenceSequence"/>
-	<part name="overwrite" type="xsd:boolean"/>
-</message>
-<message name="Management.KeyCertificate.certificate_request_generate_with_extensionsResponse">
 </message>
 
 <message name="Management.KeyCertificate.certificate_request_import_from_pemRequest">
@@ -1029,16 +956,6 @@ All other trademarks mentioned in this document are the property of their respec
 		<input message="tns:Management.KeyCertificate.key_import_from_pem_v2Request"/>
 		<output message="tns:Management.KeyCertificate.key_import_from_pem_v2Response"/>
 	</operation>
-	<operation name="certificate_generate_with_extensions">
-	<documentation>
- Generates certificates with the specified certificate extensions.
- The associated keys, having the same identification as each certificate, must be created
- before creating certificates.
-
-        	</documentation>
-		<input message="tns:Management.KeyCertificate.certificate_generate_with_extensionsRequest"/>
-		<output message="tns:Management.KeyCertificate.certificate_generate_with_extensionsResponse"/>
-	</operation>
 	<operation name="key_certificate_import_from_pem">
 	<documentation>
  Note: This method is intended for internal F5 use (hence, no
@@ -1154,15 +1071,6 @@ All other trademarks mentioned in this document are the property of their respec
         	</documentation>
 		<input message="tns:Management.KeyCertificate.get_certificate_subject_alternative_nameRequest"/>
 		<output message="tns:Management.KeyCertificate.get_certificate_subject_alternative_nameResponse"/>
-	</operation>
-	<operation name="get_certificate_request_subject_alternative_name">
-	<documentation>
- Gets the list of all certificate request subject alternative names in the certificate request file
- objects as specified by the files.
-
-        	</documentation>
-		<input message="tns:Management.KeyCertificate.get_certificate_request_subject_alternative_nameRequest"/>
-		<output message="tns:Management.KeyCertificate.get_certificate_request_subject_alternative_nameResponse"/>
 	</operation>
 	<operation name="get_certificate_subject_alternative_name_bundle">
 	<documentation>
@@ -1317,16 +1225,6 @@ All other trademarks mentioned in this document are the property of their respec
 		<input message="tns:Management.KeyCertificate.certificate_request_generateRequest"/>
 		<output message="tns:Management.KeyCertificate.certificate_request_generateResponse"/>
 	</operation>
-	<operation name="certificate_request_generate_with_extensions">
-	<documentation>
- Generates certificate signing requests with the specified certificate extensions.
- The associated keys, having the same identification as each certificate request, must be created
- before creating certificate signing requests.
-
-        	</documentation>
-		<input message="tns:Management.KeyCertificate.certificate_request_generate_with_extensionsRequest"/>
-		<output message="tns:Management.KeyCertificate.certificate_request_generate_with_extensionsResponse"/>
-	</operation>
 	<operation name="certificate_request_import_from_pem">
 	<documentation>
  Imports/installs the specified certificate requests from the given PEM-formatted data.
@@ -1393,9 +1291,8 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="export_all_to_archive_file">
 	<documentation>
- Exports all currently installed keys and certificates in the current session active
- folder into the specified archive file. The archive file is a .tgz file that will
- contain all keys and certificates.
+ Exports all currently installed keys and certificates into the specified archive file.
+ The archive file is a .tgz file that will contain all keys and certificates.
  
         	</documentation>
 		<input message="tns:Management.KeyCertificate.export_all_to_archive_fileRequest"/>
@@ -1403,9 +1300,8 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="import_all_from_archive_file">
 	<documentation>
- Imports/installs all keys and certificates from the specified archive file into
- current session active folder. The archive file should be a .tgz file that contains
- all keys and certificates.
+ Imports/installs all keys and certificates from the specified archive file.
+ The archive file should be a .tgz file that contains all keys and certificates.
  
         	</documentation>
 		<input message="tns:Management.KeyCertificate.import_all_from_archive_fileRequest"/>
@@ -1413,9 +1309,9 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="export_all_to_archive_stream">
 	<documentation>
- Exports all currently installed keys and certificates in the current session active
- folder into the returned archive stream. The returned archive stream is basically the
- contents of a .tgz file that contains all keys and certificates.
+ Exports all currently installed keys and certificates into the returned archive stream.
+ The returned archive stream is basically the contents of a .tgz file that contains 
+ all keys and certificates.
  
         	</documentation>
 		<input message="tns:Management.KeyCertificate.export_all_to_archive_streamRequest"/>
@@ -1423,9 +1319,9 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="import_all_from_archive_stream">
 	<documentation>
- Imports/installs all keys and certificates from the incoming archive stream into
- current session active folder. The archive stream should be the contents of a .tgz
- file that contains all keys and certificates.
+ Imports/installs all keys and certificates from the incoming archive stream.
+ The archive stream should be the contents of a .tgz file that contains all 
+ keys and certificates.
  
         	</documentation>
 		<input message="tns:Management.KeyCertificate.import_all_from_archive_streamRequest"/>
@@ -1647,28 +1543,6 @@ All other trademarks mentioned in this document are the property of their respec
 		</output>
 	</operation>
 
-	<operation name="certificate_generate_with_extensions">
-	<documentation>
- Generates certificates with the specified certificate extensions.
- The associated keys, having the same identification as each certificate, must be created
- before creating certificates.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Management/KeyCertificate"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Management/KeyCertificate"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
 	<operation name="key_certificate_import_from_pem">
 	<documentation>
  Note: This method is intended for internal F5 use (hence, no
@@ -1900,27 +1774,6 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the list of all certificate subject alternative names in the certificate file objects 
  as specified by the file_names. This method is for non-bundled certificates.  For certificate
  bundles, use get_certificate_subject_alternative_name_bundle.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Management/KeyCertificate"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Management/KeyCertificate"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_certificate_request_subject_alternative_name">
-	<documentation>
- Gets the list of all certificate request subject alternative names in the certificate request file
- objects as specified by the files.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>
@@ -2283,28 +2136,6 @@ All other trademarks mentioned in this document are the property of their respec
 		</output>
 	</operation>
 
-	<operation name="certificate_request_generate_with_extensions">
-	<documentation>
- Generates certificate signing requests with the specified certificate extensions.
- The associated keys, having the same identification as each certificate request, must be created
- before creating certificate signing requests.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Management/KeyCertificate"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Management/KeyCertificate"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
 	<operation name="certificate_request_import_from_pem">
 	<documentation>
  Imports/installs the specified certificate requests from the given PEM-formatted data.
@@ -2455,9 +2286,8 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="export_all_to_archive_file">
 	<documentation>
- Exports all currently installed keys and certificates in the current session active
- folder into the specified archive file. The archive file is a .tgz file that will
- contain all keys and certificates.
+ Exports all currently installed keys and certificates into the specified archive file.
+ The archive file is a .tgz file that will contain all keys and certificates.
  
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>
@@ -2477,9 +2307,8 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="import_all_from_archive_file">
 	<documentation>
- Imports/installs all keys and certificates from the specified archive file into
- current session active folder. The archive file should be a .tgz file that contains
- all keys and certificates.
+ Imports/installs all keys and certificates from the specified archive file.
+ The archive file should be a .tgz file that contains all keys and certificates.
  
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>
@@ -2499,9 +2328,9 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="export_all_to_archive_stream">
 	<documentation>
- Exports all currently installed keys and certificates in the current session active
- folder into the returned archive stream. The returned archive stream is basically the
- contents of a .tgz file that contains all keys and certificates.
+ Exports all currently installed keys and certificates into the returned archive stream.
+ The returned archive stream is basically the contents of a .tgz file that contains 
+ all keys and certificates.
  
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>
@@ -2521,9 +2350,9 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="import_all_from_archive_stream">
 	<documentation>
- Imports/installs all keys and certificates from the incoming archive stream into
- current session active folder. The archive stream should be the contents of a .tgz
- file that contains all keys and certificates.
+ Imports/installs all keys and certificates from the incoming archive stream.
+ The archive stream should be the contents of a .tgz file that contains all 
+ keys and certificates.
  
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Management/KeyCertificate"/>

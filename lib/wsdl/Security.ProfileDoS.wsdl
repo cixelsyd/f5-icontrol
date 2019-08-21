@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!--
-Copyright (c) 1996-2016, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
+Copyright (c) 1996-2015, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
 
 F5, F5 Networks, the F5 logo, BIG-IP, 3-DNS, iControl, GLOBAL-SITE, SEE-IT, EDGE-FX, FireGuard, Internet Control Architecture, IP Application Switch, iRules, PACKET VELOCITY, SYN Check, CONTROL YOUR WORLD, OneConnect, ZoneRunner, uRoam, FirePass, and TrafficShield are registered trademarks or trademarks of F5 Networks, Inc., in the U.S. and certain other countries. 
 
@@ -199,111 +199,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>NETWORK_ATTACK_VECTOR_UDP_FLOOD</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_IP_OPT_FRAMES">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_IP_OPT_FRAMES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_IP_FRAG_FLOOD">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_IP_FRAG_FLOOD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_TOO_MANY_EXT_HDRS">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_TOO_MANY_EXT_HDRS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_EXT_HDR_TOO_LARGE">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_EXT_HDR_TOO_LARGE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_IP_LOW_TTL">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_IP_LOW_TTL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_HOP_CNT_LOW">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_HOP_CNT_LOW</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_IPV6_EXT_HDR_FRAMES">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_IPV6_EXT_HDR_FRAMES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_IPV6_FRAG_FLOOD">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_IPV6_FRAG_FLOOD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_UNK_TCP_OPT_TYPE">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_UNK_TCP_OPT_TYPE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_OPT_PRESENT_WITH_ILLEGAL_LEN">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_OPT_PRESENT_WITH_ILLEGAL_LEN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_TCP_OPT_OVERRUNS_TCP_HDR">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_TCP_OPT_OVERRUNS_TCP_HDR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_TCP_SYNACK_FLOOD">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_TCP_SYNACK_FLOOD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_ICMPV4_FLOOD">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_ICMPV4_FLOOD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_ICMP_FRAG">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_ICMP_FRAG</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_ICMPV6_FLOOD">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_ICMPV6_FLOOD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_HOST_UNREACHABLE">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_HOST_UNREACHABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_TIDCMP">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_TIDCMP</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_SWEEP">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_SWEEP</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_TCP_BAD_URGENT">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_TCP_BAD_URGENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_TCP_WINDOW_SIZE">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_TCP_WINDOW_SIZE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="NETWORK_ATTACK_VECTOR_TCP_SYN_OVERSIZE">
-					<xsd:annotation>
-						<xsd:documentation>NETWORK_ATTACK_VECTOR_TCP_SYN_OVERSIZE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:complexType name="Security.ProfileDoS.DNSQuerySequenceSequence">
@@ -372,13 +267,6 @@ All other trademarks mentioned in this document are the property of their respec
 			<xsd:complexContent>
 				<xsd:restriction base='SOAP-ENC:Array'>
 					<xsd:attribute ref='SOAP-ENC:arrayType' wsdl:arrayType='tns:Security.ProfileDoS.DNSQueryVectorStatisticsSequence[]'/>
-				</xsd:restriction>
-			</xsd:complexContent>
-		</xsd:complexType>
-		<xsd:complexType name="Common.EnabledStateSequenceSequenceSequence">
-			<xsd:complexContent>
-				<xsd:restriction base='SOAP-ENC:Array'>
-					<xsd:attribute ref='SOAP-ENC:arrayType' wsdl:arrayType='tns:Common.EnabledStateSequenceSequence[]'/>
 				</xsd:restriction>
 			</xsd:complexContent>
 		</xsd:complexType>
@@ -4536,11 +4424,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>STATISTIC_DNS_CACHE_RESOLVER_SEC_SECURE</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_CACHE_RESOLVER_RPZ_REWRITES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_CACHE_RESOLVER_RPZ_REWRITES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 				<xsd:enumeration value="STATISTIC_DNS_REQUESTS_TO_CACHE">
 					<xsd:annotation>
 						<xsd:documentation>STATISTIC_DNS_REQUESTS_TO_CACHE</xsd:documentation>
@@ -4909,11 +4792,6 @@ All other trademarks mentioned in this document are the property of their respec
 				<xsd:enumeration value="STATISTIC_DNS_OP_UPDATE">
 					<xsd:annotation>
 						<xsd:documentation>STATISTIC_DNS_OP_UPDATE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_OP_OTHER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_OP_OTHER</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
 				<xsd:enumeration value="STATISTIC_DNS_ZONE_IXFR">
@@ -6901,1021 +6779,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>STATISTIC_SSL_COMMON_FWDP_HOSTNAME_BYPASSES</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_TOTAL_END_POINTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_TOTAL_END_POINTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_REQUESTS_GTM_REWRITES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_REQUESTS_GTM_REWRITES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_ACCEPTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_ACCEPTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_CURRENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_CURRENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_MAXIMUM">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_MAXIMUM</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_BLOCKED_COMMANDS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_BLOCKED_COMMANDS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_CONNECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_CONNECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_CURRENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_CURRENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_MAXIMUM">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_MAXIMUM</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_FAILED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_FAILED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_RENEGOTIATIONS_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_RENEGOTIATIONS_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FASTL4_LATE_BINDING_SUCCESSFUL_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FASTL4_LATE_BINDING_SUCCESSFUL_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FASTL4_LATE_BINDING_TIMED_OUT_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FASTL4_LATE_BINDING_TIMED_OUT_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_STATUS_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_STATUS_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_VALIDATION_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_VALIDATION_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_CERTIFICATE_STATUS_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_CERTIFICATE_STATUS_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_HTTP_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_HTTP_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_TIMEOUTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_TIMEOUTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_PORT_BLOCKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_PORT_BLOCKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_CLIENTS_REACHED_LIMIT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_CLIENTS_REACHED_LIMIT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_ZOMBIE_PORT_BLOCKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_ZOMBIE_PORT_BLOCKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_CLIENTS_REACHED_LIMIT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_CLIENTS_REACHED_LIMIT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATION_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATION_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_DEALLOCATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_DEALLOCATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_CREATED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_CREATED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_DELETED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_DELETED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCK_CONNECTIONS_KILLED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCK_CONNECTIONS_KILLED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_QUERIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_QUERIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_ALLOWED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_ALLOWED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_DROPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_DROPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_TRUNCATED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_TRUNCATED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_NXDOMAIN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_NXDOMAIN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_NOERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_NOERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_REFUSED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_REFUSED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_IN_RESUBMITTED_FOR_RETRY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_IN_RESUBMITTED_FOR_RETRY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_AND_NOT_DELIVERABLE_TO_ORIGINATOR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_AND_NOT_DELIVERABLE_TO_ORIGINATOR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_ROUTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_ROUTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_UNROUTABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_UNROUTABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_A_FULL_QUEUE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_A_FULL_QUEUE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_CLOSED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_CLOSED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_AN_INTERNAL_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_AN_INTERNAL_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_PERSIST_KEY_IN_USE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_PERSIST_KEY_IN_USE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BADMSGS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BADMSGS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_DROPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_DROPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INVITE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INVITE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ACK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ACK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_OPTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_OPTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BYE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BYE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CANCEL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CANCEL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REGISTER_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REGISTER_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PUBLISH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PUBLISH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOTIFY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOTIFY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SUBSCRIBE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SUBSCRIBE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MESSAGE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MESSAGE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PRACK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PRACK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_OTHER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_OTHER</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PROVISIONAL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PROVISIONAL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SUCCESSFUL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SUCCESSFUL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REDIRECTION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REDIRECTION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CLIENT_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CLIENT_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_GLOBAL_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_GLOBAL_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MESSAGE_LIMIT_EXCEEDED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MESSAGE_LIMIT_EXCEEDED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MAX_FORWARDS_CHECK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MAX_FORWARDS_CHECK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BAD_REQUEST">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BAD_REQUEST</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_FOUND">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_FOUND</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TRANSACTION_DOES_NOT_EXIST">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TRANSACTION_DOES_NOT_EXIST</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TOO_MANY_HOPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TOO_MANY_HOPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNKNOWN_PARSE_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNKNOWN_PARSE_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CONTENT_LENGTH_MISMATCH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CONTENT_LENGTH_MISMATCH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_EXTRANEOUS_HEADER_FIELD">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_EXTRANEOUS_HEADER_FIELD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INVALID_CONTENT_LENGTH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INVALID_CONTENT_LENGTH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQ_FIELD_OVERLARGE_VALUES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQ_FIELD_OVERLARGE_VALUES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_RESP_FIELD_OVERLARGE_VALUES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_RESP_FIELD_OVERLARGE_VALUES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNTERMINATED_QUOTED_STRING">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNTERMINATED_QUOTED_STRING</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MALFORMED_REQUEST_URI">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MALFORMED_REQUEST_URI</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNKNOWN_PROTOCOL_VERSION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNKNOWN_PROTOCOL_VERSION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CSEQ_METHOD_MISMATCH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CSEQ_METHOD_MISMATCH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_BYTES_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_BYTES_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_BYTES_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_BYTES_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_PACKETS_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_PACKETS_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_BYTES_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_BYTES_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_BYTES_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_BYTES_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_PACKETS_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_PACKETS_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_EVICTION_POLICY_EVICTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_EVICTION_POLICY_EVICTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CONNECTION_FLOW_MISS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CONNECTION_FLOW_MISS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_SYNCOOKIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_SYNCOOKIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_REJECTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_REJECTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_HW_SYNCOOKIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_HW_SYNCOOKIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_HW_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_HW_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_HITS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_HITS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_REJECTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_REJECTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FW_RULE_LAST_HIT_TIME">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FW_RULE_LAST_HIT_TIME</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_ASSOCIATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_ASSOCIATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_CLOSING">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_CLOSING</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_CONFIRMED_ADDRESSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_CONFIRMED_ADDRESSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_UNCONFIRMED_ADDRESSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_UNCONFIRMED_ADDRESSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_ACTIVE_PATHS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_ACTIVE_PATHS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_INACTIVE_PATHS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_INACTIVE_PATHS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_TLS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_TLS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_TLS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_TLS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_AGGREGATE_RENEGOTIATIONS_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_AGGREGATE_RENEGOTIATIONS_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FTP_FTPS_SESSIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FTP_FTPS_SESSIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_READ_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_READ_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_WRITE_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_WRITE_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FTP_PASSTHRU_TRANSITIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FTP_PASSTHRU_TRANSITIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_DISCARDED_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_DISCARDED_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_INSPECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_INSPECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_MALFORMED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_MALFORMED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_CACHE_LOOKUPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_CACHE_LOOKUPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_CACHE_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_CACHE_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_VCMP_RED_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_VCMP_RED_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_SESSION_MIRRORING_SUCCESS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_SESSION_MIRRORING_SUCCESS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_SESSION_MIRRORING_FAILURE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_SESSION_MIRRORING_FAILURE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_PEER_READY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_PEER_READY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_RECV">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_RECV</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_HS_SUCCESS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_HS_SUCCESS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_FAILURE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_FAILURE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_DTLS_TX_PUSHBACKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_DTLS_TX_PUSHBACKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_CIPHER_CAMELLIA_BULK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_CIPHER_CAMELLIA_BULK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_NAPTR_REQS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_NAPTR_REQS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_TRANSMITTED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_TRANSMITTED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_RECEIVED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_RECEIVED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_RPF">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_RPF</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_WRONG_INTERFACE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_WRONG_INTERFACE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_NO_ROUTE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_NO_ROUTE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_ROUTES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_ROUTES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_TRANSMITTED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_TRANSMITTED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_RECEIVED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_RECEIVED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_RPF">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_RPF</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_WRONG_INTERFACE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_WRONG_INTERFACE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_NO_ROUTE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_NO_ROUTE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_ROUTES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_ROUTES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_ACTIVE_HANDSHAKES_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_ACTIVE_HANDSHAKES_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CURRENT_ACTIVE_HANDSHAKES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CURRENT_ACTIVE_HANDSHAKES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_1K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_1K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_2K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_2K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_3K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_3K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_4K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_4K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_5K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_5K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_6K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_6K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_7K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_7K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_8K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_8K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_9K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_9K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_10K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_10K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_11K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_11K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_12K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_12K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_13K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_13K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_14K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_14K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_15K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_15K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_16K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_16K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_STANDBY_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_STANDBY_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE_413_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE_413_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME_416_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME_416_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE_480_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE_480_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTED_482_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTED_482_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TOO_MANY_HOPS_483_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TOO_MANY_HOPS_483_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE_484_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE_484_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE_488_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE_488_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR_500_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR_500_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_IMPLEMENTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_IMPLEMENTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_IMPLEMENTED_501_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_IMPLEMENTED_501_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE_503_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE_503_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED_505_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED_505_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BADMSGS_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BADMSGS_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_DROPS_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_DROPS_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INFO">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INFO</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REFER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REFER</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UPDATE_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UPDATE_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BAD_REQUEST_400_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BAD_REQUEST_400_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_FOUND_404_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_FOUND_404_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:complexType name="Security.ProfileDoS.SIPAttackVectorStatisticEntry">
@@ -9308,78 +8171,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<part name="return" type="tns:Security.ProfileDoS.NetworkAttackVectorStatisticsSequenceSequence"/>
 </message>
 
-<message name="Security.ProfileDoS.set_network_attack_vector_auto_blacklisting_stateRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-	<part name="states" type="tns:Common.EnabledStateSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.set_network_attack_vector_auto_blacklisting_stateResponse">
-</message>
-
-<message name="Security.ProfileDoS.get_network_attack_vector_auto_blacklisting_stateRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.get_network_attack_vector_auto_blacklisting_stateResponse">
-	<part name="return" type="tns:Common.EnabledStateSequenceSequenceSequence"/>
-</message>
-
-<message name="Security.ProfileDoS.set_network_attack_vector_blacklist_detection_secondsRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-	<part name="values" type="tns:Common.ULongSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.set_network_attack_vector_blacklist_detection_secondsResponse">
-</message>
-
-<message name="Security.ProfileDoS.get_network_attack_vector_blacklist_detection_secondsRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.get_network_attack_vector_blacklist_detection_secondsResponse">
-	<part name="return" type="tns:Common.ULongSequenceSequenceSequence"/>
-</message>
-
-<message name="Security.ProfileDoS.set_network_attack_vector_blacklist_durationRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-	<part name="values" type="tns:Common.ULongSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.set_network_attack_vector_blacklist_durationResponse">
-</message>
-
-<message name="Security.ProfileDoS.get_network_attack_vector_blacklist_durationRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.get_network_attack_vector_blacklist_durationResponse">
-	<part name="return" type="tns:Common.ULongSequenceSequenceSequence"/>
-</message>
-
-<message name="Security.ProfileDoS.set_network_attack_vector_blacklist_categoryRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-	<part name="values" type="tns:Common.StringSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.set_network_attack_vector_blacklist_categoryResponse">
-</message>
-
-<message name="Security.ProfileDoS.get_network_attack_vector_blacklist_categoryRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="networks" type="tns:Common.StringSequenceSequence"/>
-	<part name="vectors" type="tns:Security.ProfileDoS.NetworkAttackVectorSequenceSequenceSequence"/>
-</message>
-<message name="Security.ProfileDoS.get_network_attack_vector_blacklist_categoryResponse">
-	<part name="return" type="tns:Common.StringSequenceSequenceSequence"/>
-</message>
-
 <message name="Security.ProfileDoS.get_versionRequest">
 </message>
 <message name="Security.ProfileDoS.get_versionResponse">
@@ -9471,7 +8262,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_application">
 	<documentation>
  Removes specific Application Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.remove_applicationRequest"/>
 		<output message="tns:Security.ProfileDoS.remove_applicationResponse"/>
@@ -9479,7 +8270,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_all_applications">
 	<documentation>
  Removes all Application Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.remove_all_applicationsRequest"/>
 		<output message="tns:Security.ProfileDoS.remove_all_applicationsResponse"/>
@@ -9509,7 +8300,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_protocol_dns">
 	<documentation>
  Removes specific Protocol DNS Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.remove_protocol_dnsRequest"/>
 		<output message="tns:Security.ProfileDoS.remove_protocol_dnsResponse"/>
@@ -9517,7 +8308,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_all_protocol_dnses">
 	<documentation>
  Removes all Protocol DNS Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.remove_all_protocol_dnsesRequest"/>
 		<output message="tns:Security.ProfileDoS.remove_all_protocol_dnsesResponse"/>
@@ -9537,7 +8328,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_trigger_irule_state">
 	<documentation>
  Gets the trigger DoS iRule event state in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_trigger_irule_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_trigger_irule_stateResponse"/>
@@ -9546,7 +8337,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the operation mode of the specified anomaly.
  The available operation modes are mentioned under the OperationMode enumeration.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.set_operation_modeRequest"/>
 		<output message="tns:Security.ProfileDoS.set_operation_modeResponse"/>
@@ -9554,7 +8345,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_operation_mode">
 	<documentation>
  Gets the operation mode of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_operation_modeRequest"/>
 		<output message="tns:Security.ProfileDoS.get_operation_modeResponse"/>
@@ -9584,7 +8375,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_source_ip_based_client_side_integrity_defense_state">
 	<documentation>
  Gets the Source IP-based client side integrity defense state in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_source_ip_based_client_side_integrity_defense_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_source_ip_based_client_side_integrity_defense_stateResponse"/>
@@ -9606,7 +8397,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_based_client_side_integrity_defense_state">
 	<documentation>
  Gets the URL-based client side integrity defense state in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_url_based_client_side_integrity_defense_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_url_based_client_side_integrity_defense_stateResponse"/>
@@ -9628,7 +8419,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_client_side_integrity_defense_state">
 	<documentation>
  Gets the Site-wide client side integrity defense state in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_site_wide_client_side_integrity_defense_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_site_wide_client_side_integrity_defense_stateResponse"/>
@@ -9651,7 +8442,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_source_ip_based_rate_limiting_state">
 	<documentation>
  Gets the Source IP-based rate limiting state in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_source_ip_based_rate_limiting_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_source_ip_based_rate_limiting_stateResponse"/>
@@ -9659,7 +8450,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_based_rate_limiting_state">
 	<documentation>
  Sets the URL-based rate limiting state in the specified anomaly.
-
+ 
  Please see set_source_ip_based_client_side_integrity_defense_state for more information about prevention policy.
   - URL-based rate limiting: Specifies, when enabled,
                     that the system drops transactions for suspicious URLs,
@@ -9675,7 +8466,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_based_rate_limiting_state">
 	<documentation>
  Gets the URL-based rate limiting state in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_url_based_rate_limiting_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_url_based_rate_limiting_stateResponse"/>
@@ -9683,7 +8474,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_rate_limiting_state">
 	<documentation>
  Sets the Site-wide rate limiting state in the specified anomaly.
-
+ 
  Please see set_source_ip_based_client_side_integrity_defense_state for more information about prevention policy.
   - Site-wide rate limiting: Specifies, when enabled,
                     that the system drops transactions for suspicious sites,
@@ -9699,7 +8490,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_rate_limiting_state">
 	<documentation>
  Gets the Site-wide rate limiting state in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_site_wide_rate_limiting_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_site_wide_rate_limiting_stateResponse"/>
@@ -9707,7 +8498,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_ip_tps_increase_rate">
 	<documentation>
  Sets the TPS increase rate value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
  IP detection criteria setting is only available in TPS-based anomaly.
  It specifies that if at least one of the following criteria is met, the system treats the IP address as an attacker.
  If these numbers are reached, the system prevents further attacks by limiting the number of requests per second to the history interval.
@@ -9732,7 +8523,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_ip_tps_increase_rate">
 	<documentation>
  Gets the TPS increase rate value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_ip_tps_increase_rateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_ip_tps_increase_rateResponse"/>
@@ -9740,7 +8531,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_ip_maximum_tps">
 	<documentation>
  Sets the maximum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
  Please see set_ip_tps_increase_rate for more information about IP detection criteria and suspicious IP criteria.
   - Maximum TPS: Specifies that the system considers an IP address to be an attacker (or treats as suspicious)
                  if the number of requests sent, per second, from an IP address is equal to or greater than this number.
@@ -9753,7 +8544,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_ip_maximum_tps">
 	<documentation>
  Gets the maximum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_ip_maximum_tpsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_ip_maximum_tpsResponse"/>
@@ -9761,7 +8552,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_ip_minimum_tps">
 	<documentation>
  Sets the minimum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
  Please see set_ip_tps_increase_rate for more information about IP detection criteria and suspicious IP criteria.
   - Minimum TPS: Specifies that the system considers an IP address to be an attacker (or treats as suspicious)
                  if the detected TPS for a specific IP address equals, or is greater than, this number,
@@ -9776,7 +8567,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_ip_minimum_tps">
 	<documentation>
  Gets the minimum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_ip_minimum_tpsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_ip_minimum_tpsResponse"/>
@@ -9784,7 +8575,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_tps_increase_rate">
 	<documentation>
  Sets the TPS increase rate value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
  URL detection criteria setting is only available in TPS-based anomaly.
  It specifies that if at least one of the following criteria is met, the system treats a URL to be under attack.
  If these numbers are reached, the system prevents further attacks by limiting the number of requests per second to the history interval.
@@ -9809,7 +8600,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_tps_increase_rate">
 	<documentation>
  Gets the TPS increase rate value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_url_tps_increase_rateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_url_tps_increase_rateResponse"/>
@@ -9817,7 +8608,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_maximum_tps">
 	<documentation>
  Sets the maximum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
  Please see set_url_tps_increase_rate for more information about URL detection criteria and suspicious URL criteria.
   - Maximum TPS: Specifies that the system considers a URL to be under attack (or treats as suspicious)
                  if the number of requests sent, per second, for the URL is equal to or greater than this number.
@@ -9830,7 +8621,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_maximum_tps">
 	<documentation>
  Gets the maximum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_url_maximum_tpsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_url_maximum_tpsResponse"/>
@@ -9838,7 +8629,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_minimum_tps">
 	<documentation>
  Sets the minimum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
  Please see set_url_tps_increase_rate for more information about URL detection criteria and suspicious URL criteria.
   - Minimum TPS: Specifies that the system considers a URL to be under attack (or treats as suspicious)
                  if the detected TPS for a specific URL equals, or is greater than, this number,
@@ -9853,7 +8644,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_minimum_tps">
 	<documentation>
  Gets the minimum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_url_minimum_tpsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_url_minimum_tpsResponse"/>
@@ -9861,7 +8652,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_tps_increase_rate">
 	<documentation>
  Sets the TPS increase rate value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
  Site-wide detection criteria setting is only available in TPS-based anomaly.
  It specifies that if at least one of the following criteria is met, the system treats the whole site to be under attack.
  If these numbers are reached, the system prevents further attacks by limiting the number of requests per second to the history interval.
@@ -9886,7 +8677,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_tps_increase_rate">
 	<documentation>
  Gets the TPS increase rate value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_site_wide_tps_increase_rateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_site_wide_tps_increase_rateResponse"/>
@@ -9894,7 +8685,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_maximum_tps">
 	<documentation>
  Sets the maximum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
  Please see set_site_wide_tps_increase_rate for more information about Site-wide detection criteria and suspicious Site-wide criteria.
   - Maximum TPS: Specifies that the system considers a whole site to be under attack (or treats as suspicious)
                  if the number of requests sent, per second, for the site is equal to or greater than this number.
@@ -9907,7 +8698,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_maximum_tps">
 	<documentation>
  Gets the maximum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_site_wide_maximum_tpsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_site_wide_maximum_tpsResponse"/>
@@ -9915,7 +8706,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_minimum_tps">
 	<documentation>
  Sets the minimum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
  Please see set_site_wide_tps_increase_rate for more information about Site-wide detection criteria and suspicious Site-wide criteria.
   - Minimum TPS: Specifies that the system considers a whole site to be under attack (or treats as suspicious)
                  if the detected TPS for a specific site equals, or is greater than, this number,
@@ -9930,7 +8721,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_minimum_tps">
 	<documentation>
  Gets the minimum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_site_wide_minimum_tpsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_site_wide_minimum_tpsResponse"/>
@@ -9953,7 +8744,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_escalation_period">
 	<documentation>
  Gets the escalation period (in seconds) in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_escalation_periodRequest"/>
 		<output message="tns:Security.ProfileDoS.get_escalation_periodResponse"/>
@@ -9973,7 +8764,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_deescalation_period">
 	<documentation>
  Gets the de-escalation period (in seconds) in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_deescalation_periodRequest"/>
 		<output message="tns:Security.ProfileDoS.get_deescalation_periodResponse"/>
@@ -10001,7 +8792,7 @@ All other trademarks mentioned in this document are the property of their respec
  This method has been deprecated. Please use get_escalation_period / get_deescalation_period instead.
 
  Gets the maximum prevention duration (in seconds) in the specified anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_maximum_prevention_durationRequest"/>
 		<output message="tns:Security.ProfileDoS.get_maximum_prevention_durationResponse"/>
@@ -10009,7 +8800,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_latency_increase_rate">
 	<documentation>
  Sets the latency increase rate value in detection criteria of Latency-based anomaly.
-
+ 
  Detection criteria setting is only available in Latency-based anomaly.
  It specifies the criteria under which the system considers traffic to be an attack.
  First, the minimum latency must be reached, and then either the latency increase rate or the maximum latency must be reached.
@@ -10026,7 +8817,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_latency_increase_rate">
 	<documentation>
  Gets the latency increase rate value in detection criteria of Latency-based anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_latency_increase_rateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_latency_increase_rateResponse"/>
@@ -10034,7 +8825,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_latency">
 	<documentation>
  Sets the maximum latency value in detection criteria of Latency-based anomaly.
-
+ 
  Please see set_latency_increase_rate for more information about detection criteria.
   - Maximum latency: Specifies that the system considers traffic to be an attack if
                      the latency detection interval for a specific URL is greater than this number.
@@ -10047,7 +8838,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_latency">
 	<documentation>
  Gets the maximum latency value in detection criteria of Latency-based anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_maximum_latencyRequest"/>
 		<output message="tns:Security.ProfileDoS.get_maximum_latencyResponse"/>
@@ -10055,7 +8846,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_minimum_latency">
 	<documentation>
  Sets the minimum latency value in detection criteria of Latency-based anomaly.
-
+ 
  Please see set_latency_increase_rate for more information about detection criteria.
   - Minimum latency: Specifies that the system considers traffic to be an attack if
                      the detection interval for a specific URL equals, or is greater than, this number,
@@ -10071,7 +8862,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_minimum_latency">
 	<documentation>
  Gets the minimum latency value in detection criteria of Latency-based anomaly.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_minimum_latencyRequest"/>
 		<output message="tns:Security.ProfileDoS.get_minimum_latencyResponse"/>
@@ -10079,7 +8870,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_heavy_url_protection_state">
 	<documentation>
  Sets the heavy URL protection state in Application Security.
-
+ 
  Heavy URLs are those ones that may consume considerable server resources per request,
  thus it takes only low rate requests to those URLs in order to cause DoS attacks.
  Attacks will continue to be detected using the TPS-based and Latency-based anomalies.
@@ -10095,7 +8886,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_protection_state">
 	<documentation>
  Gets the heavy URL protection state in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_heavy_url_protection_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_heavy_url_protection_stateResponse"/>
@@ -10119,7 +8910,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_automatic_detection_state">
 	<documentation>
  Gets the automatic heavy URL detection state in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_heavy_url_automatic_detection_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_heavy_url_automatic_detection_stateResponse"/>
@@ -10127,7 +8918,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_include">
 	<documentation>
  Gets the included heavy URLs in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_heavy_url_includeRequest"/>
 		<output message="tns:Security.ProfileDoS.get_heavy_url_includeResponse"/>
@@ -10162,7 +8953,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_exclude">
 	<documentation>
  Gets the excluded heavy URLs in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_heavy_url_excludeRequest"/>
 		<output message="tns:Security.ProfileDoS.get_heavy_url_excludeResponse"/>
@@ -10197,7 +8988,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_heavy_url_latency_threshold">
 	<documentation>
  Sets latency threshold for automatic heavy URL detection (in milliseconds) in Application Security.
-
+ 
  Please see set_heavy_url_automatic_detection_state for more information about automatic heavy URL detection.
  You must enable automatic heavy URL detection in order to configure the latency threshold.
  You can increase or decrease this number to improve accuracy of the automatically detected heavy URLs,
@@ -10210,7 +9001,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_latency_threshold">
 	<documentation>
  Gets the latency threshold for automatic heavy URL detection (in milliseconds) in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_heavy_url_latency_thresholdRequest"/>
 		<output message="tns:Security.ProfileDoS.get_heavy_url_latency_thresholdResponse"/>
@@ -10219,11 +9010,11 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the TCP dump record traffic state in Application Security.
 
- Specifies when enabled that the system records traffic (performs a TCP dump)
- when a DoS attack is underway. The system records traffic during DoS attacks
+ Specifies when enabled that the system records traffic (performs a TCP dump) 
+ when a DoS attack is underway. The system records traffic during DoS attacks 
  on the virtual server in which the attack was detected. The TCP dump files can be collected
- into the QuickView file so that F5 support can use it for solving customer cases.
- The files are located in the system in the following file path: /shared/dosl7/tcpdumps,
+ into the QuickView file so that F5 support can use it for solving customer cases. 
+ The files are located in the system in the following file path: /shared/dosl7/tcpdumps, 
  and have a pcap extension.
  The default is disabled.
 
@@ -10234,7 +9025,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_record_traffic_state">
 	<documentation>
  Gets the TCP dump record traffic state in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_tcp_dump_record_traffic_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_tcp_dump_record_traffic_stateResponse"/>
@@ -10243,7 +9034,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the TCP dump maximum duration (in seconds) in Application Security.
 
- The maximum time for one dump cycle. Legal values are between 1 and 300.
+ The maximum time for one dump cycle. Legal values are between 1 and 300. 
  Please see set_tcp_dump_record_traffic_state for more information about recording the traffic/TCP dump.
  The default setting is 30 seconds.
 
@@ -10254,7 +9045,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_maximum_duration">
 	<documentation>
  Gets the TCP dump maximum duration (in seconds) in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_tcp_dump_maximum_durationRequest"/>
 		<output message="tns:Security.ProfileDoS.get_tcp_dump_maximum_durationResponse"/>
@@ -10263,7 +9054,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the TCP dump maximum size (in megabytes) in Application Security.
 
- The maximum size for a dump cycle. Legal values are between 1 and 50.
+ The maximum size for a dump cycle. Legal values are between 1 and 50. 
  Please see set_tcp_dump_record_traffic_state for more information about recording the traffic/TCP dump.
  The default setting is 10 megabytes.
 
@@ -10274,7 +9065,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_maximum_size">
 	<documentation>
  Gets the TCP dump maximum size (in megabytes) in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_tcp_dump_maximum_sizeRequest"/>
 		<output message="tns:Security.ProfileDoS.get_tcp_dump_maximum_sizeResponse"/>
@@ -10285,8 +9076,8 @@ All other trademarks mentioned in this document are the property of their respec
 
  Specifies whether the system performs one dump for each DoS attack, or multiple dumps.
  When value is 0: Specifies that the system performs one dump for each DoS attack.
- When value is greater than 0: Specifies that the system performs multiple dumps for each DoS attack,
- and how long the system waits after finishing a dump cycle before starting a new cycle.
+ When value is greater than 0: Specifies that the system performs multiple dumps for each DoS attack, 
+ and how long the system waits after finishing a dump cycle before starting a new cycle. 
  Legal values are between 0 and 2600 seconds.
  Please see set_tcp_dump_record_traffic_state for more information about recording the traffic/TCP dump.
  The default setting is 120 seconds.
@@ -10298,7 +9089,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_repetition_interval">
 	<documentation>
  Gets the TCP dump repetition interval (in seconds) in Application Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_tcp_dump_repetition_intervalRequest"/>
 		<output message="tns:Security.ProfileDoS.get_tcp_dump_repetition_intervalResponse"/>
@@ -10314,7 +9105,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="add_white_ip">
 	<documentation>
  Adds a list of IP addresses with subnet masks to the whitelist of DoS profile Application Security.
-
+ 
  IP address whitelist specifies IP addresses, including subnet masks, that the system considers
  legitimate and does not examine when performing DoS prevention.
 
@@ -10410,7 +9201,7 @@ All other trademarks mentioned in this document are the property of their respec
  Sets the rate increase percentage for the specified SIP Attack Vectors.  When the rate increases
  above this percentage then BIG-IP will detect the specified SIP Attack Vectors.
  Note: This value cannot be set below 100.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.set_sip_attack_vector_rate_increaseRequest"/>
 		<output message="tns:Security.ProfileDoS.set_sip_attack_vector_rate_increaseResponse"/>
@@ -10418,7 +9209,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_sip_attack_vector_rate_increase">
 	<documentation>
  Gets the rate increase percentage for the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_sip_attack_vector_rate_increaseRequest"/>
 		<output message="tns:Security.ProfileDoS.get_sip_attack_vector_rate_increaseResponse"/>
@@ -10427,7 +9218,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the rate threshold for the specified SIP Attack Vectors. When the rate increases above this threshold
  then BIG-IP will detect the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.set_sip_attack_vector_rate_thresholdRequest"/>
 		<output message="tns:Security.ProfileDoS.set_sip_attack_vector_rate_thresholdResponse"/>
@@ -10435,7 +9226,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_sip_attack_vector_rate_threshold">
 	<documentation>
  Gets the rate threshold for the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_sip_attack_vector_rate_thresholdRequest"/>
 		<output message="tns:Security.ProfileDoS.get_sip_attack_vector_rate_thresholdResponse"/>
@@ -10444,7 +9235,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the rate increase for SIP protocol errors DoS attack vector. When the rate increases above this percentage
  then BIG-IP will detect a protocol errors SIP DoS attack.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.set_protocol_sip_error_attack_rate_increaseRequest"/>
 		<output message="tns:Security.ProfileDoS.set_protocol_sip_error_attack_rate_increaseResponse"/>
@@ -10452,7 +9243,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_sip_error_attack_rate_increase">
 	<documentation>
  Gets the rate increase for SIP protocol errors DoS attack vector.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_protocol_sip_error_attack_rate_increaseRequest"/>
 		<output message="tns:Security.ProfileDoS.get_protocol_sip_error_attack_rate_increaseResponse"/>
@@ -10461,7 +9252,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the rate threshold for SIP protocol errors DoS attack vector. When the rate increases above this threshold
  then BIG-IP will detect a protocol errors SIP DoS attack.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.set_protocol_sip_error_attack_rate_thresholdRequest"/>
 		<output message="tns:Security.ProfileDoS.set_protocol_sip_error_attack_rate_thresholdResponse"/>
@@ -10469,7 +9260,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_sip_error_attack_rate_threshold">
 	<documentation>
  Gets the rate threshold for SIP protocol errors DoS attack vector.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_protocol_sip_error_attack_rate_thresholdRequest"/>
 		<output message="tns:Security.ProfileDoS.get_protocol_sip_error_attack_rate_thresholdResponse"/>
@@ -10486,7 +9277,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_sip_error_attack_detection_state">
 	<documentation>
  Gets the SIP Protocol Error Attack Detection state in Protocol SIP Security.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_protocol_sip_error_attack_detection_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_protocol_sip_error_attack_detection_stateResponse"/>
@@ -10494,7 +9285,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_sip_attack_vector_statistics">
 	<documentation>
  Resets the statistics for the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.reset_sip_attack_vector_statisticsRequest"/>
 		<output message="tns:Security.ProfileDoS.reset_sip_attack_vector_statisticsResponse"/>
@@ -10502,7 +9293,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_sip_attack_vector_statistics">
 	<documentation>
  Gets the statistics for all SIP Attack Vectors (of the specified Protocol SIP Security sub-profiles).
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_all_sip_attack_vector_statisticsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_all_sip_attack_vector_statisticsResponse"/>
@@ -10549,14 +9340,14 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="set_dns_query_vector_rate_increase">
 	<documentation>
- Sets the rate increase percentage for the specified DNS Query Vectors.
+ Sets the rate increase percentage for the specified DNS Query Vectors. 
  The system calculates the rate increase percentage for a given
  vector by comparing the 1 minute average to the 1 hour average, and
  compares the result to the percentage set. If the set percentage is
  less than or equal to the calculated value, a DoS attack is registered.
  Note that this value cannot be set below 100.
  The attack ends when this condition is no longer true.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.set_dns_query_vector_rate_increaseRequest"/>
 		<output message="tns:Security.ProfileDoS.set_dns_query_vector_rate_increaseResponse"/>
@@ -10564,7 +9355,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_dns_query_vector_rate_increase">
 	<documentation>
  Gets the rate increase percentage for the specified DNS Query Vectors.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_dns_query_vector_rate_increaseRequest"/>
 		<output message="tns:Security.ProfileDoS.get_dns_query_vector_rate_increaseResponse"/>
@@ -10581,7 +9372,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_dns_query_vector_rate_threshold">
 	<documentation>
  Gets the query vector rate threshold for the specified DNS Query Vectors.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_dns_query_vector_rate_thresholdRequest"/>
 		<output message="tns:Security.ProfileDoS.get_dns_query_vector_rate_thresholdResponse"/>
@@ -10589,8 +9380,8 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_protocol_dns_error_attack_rate_increase">
 	<documentation>
  Sets the DNS Protocol error attack rate increase for the specified Protocol DNS Security sub-profiles.
- This is the rate increase (as a percentage) of traffic for Malformed and Malicious
- DNS packets to register a DoS attack. This number is calculated by comparing the 1
+ This is the rate increase (as a percentage) of traffic for Malformed and Malicious 
+ DNS packets to register a DoS attack. This number is calculated by comparing the 1 
  minute average to the 1 hour average.
 
         	</documentation>
@@ -10600,7 +9391,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_dns_error_attack_rate_increase">
 	<documentation>
  Gets the DNS Protocol error attack rate increase for the specified Protocol DNS Security sub-profiles.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_protocol_dns_error_attack_rate_increaseRequest"/>
 		<output message="tns:Security.ProfileDoS.get_protocol_dns_error_attack_rate_increaseResponse"/>
@@ -10608,7 +9399,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_protocol_dns_error_attack_detection_state">
 	<documentation>
  Sets the Protocol DNS Error Attack Detection state for the specified Protocol DNS Security sub-profiles.
- This Determines whether or not to include Malformed and Malicious DNS packets
+ This Determines whether or not to include Malformed and Malicious DNS packets 
  in DoS attack detection.
 
         	</documentation>
@@ -10618,7 +9409,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_dns_error_attack_detection_state">
 	<documentation>
  Gets the DNS Protocol Error Attack Detection state for the specified Protocol DNS Security sub-profiles.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_protocol_dns_error_attack_detection_stateRequest"/>
 		<output message="tns:Security.ProfileDoS.get_protocol_dns_error_attack_detection_stateResponse"/>
@@ -10626,7 +9417,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_dns_query_vector_statistics">
 	<documentation>
  Resets the statistics for the specified DNS Query Vectors.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.reset_dns_query_vector_statisticsRequest"/>
 		<output message="tns:Security.ProfileDoS.reset_dns_query_vector_statisticsResponse"/>
@@ -10634,7 +9425,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_dns_query_vector_statistics">
 	<documentation>
  Gets the statistics for all DNS Query Vectors for the specified Protocol DNS Security sub-profiles.
-
+ 
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_all_dns_query_vector_statisticsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_all_dns_query_vector_statisticsResponse"/>
@@ -10650,8 +9441,8 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_dos_network">
 	<documentation>
  Gets the DoS Network sub-profiles for the specified DoS profiles.
- With this sub-profile, the Layer 4 attacks are detected and
- actions are taken to drop the packets over the limit in one
+ With this sub-profile, the Layer 4 attacks are detected and 
+ actions are taken to drop the packets over the limit in one 
  second.
 
         	</documentation>
@@ -10660,8 +9451,8 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="add_dos_network">
 	<documentation>
- Adds a list of DoS Network sub-profiles for the specified DoS
- profiles. Note: Only one Security DoS Network sub-profile can
+ Adds a list of DoS Network sub-profiles for the specified DoS 
+ profiles. Note: Only one Security DoS Network sub-profile can 
  exist per profile.
 
         	</documentation>
@@ -10670,7 +9461,7 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="remove_dos_network">
 	<documentation>
- Removes a list of DoS Network sub-profiles from the specified
+ Removes a list of DoS Network sub-profiles from the specified 
  DoS profiles.
 
         	</documentation>
@@ -10679,7 +9470,7 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="remove_all_dos_networks">
 	<documentation>
- Removes all DoS Network sub-profiles from the specified DoS
+ Removes all DoS Network sub-profiles from the specified DoS 
  profiles.
 
         	</documentation>
@@ -10688,10 +9479,10 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="get_network_attack_vector">
 	<documentation>
- Gets the Network Attack Vectors for the specified DoS Network
+ Gets the Network Attack Vectors for the specified DoS Network 
  sub-profiles.
- A Network Attack Vector allows the user to enable DoS attack
- detection on a specific attack vector and also lets the user
+ A Network Attack Vector allows the user to enable DoS attack 
+ detection on a specific attack vector and also lets the user 
  configure attack sensitivity (rate limit &amp; threshold).
 
         	</documentation>
@@ -10700,7 +9491,7 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="add_network_attack_vector">
 	<documentation>
- Adds a list of Network Attack Vectors for the specified DoS
+ Adds a list of Network Attack Vectors for the specified DoS 
  Network sub-profiles.
 
         	</documentation>
@@ -10709,7 +9500,7 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="remove_network_attack_vector">
 	<documentation>
- Removes a list of Network Attack Vectors from the specified DoS
+ Removes a list of Network Attack Vectors from the specified DoS 
  Network sub-profiles.
 
         	</documentation>
@@ -10718,7 +9509,7 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="remove_all_network_attack_vectors">
 	<documentation>
- Removes all Network Attack Vectors from the specified DoS
+ Removes all Network Attack Vectors from the specified DoS 
  Network sub-profiles.
 
         	</documentation>
@@ -10728,9 +9519,9 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_network_attack_vector_rate_limit">
 	<documentation>
  Sets the Rate Limits for the specified Network Attack Vectors.
- When the incoming packet number per second for the specified
- Network Attack Vectors is over this limit then the system will
- drop all the over limit packets in this second. The limit number
+ When the incoming packet number per second for the specified 
+ Network Attack Vectors is over this limit then the system will 
+ drop all the over limit packets in this second. The limit number 
  of incoming packets will be allowed again in the next second.
 
         	</documentation>
@@ -10747,11 +9538,11 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="set_network_attack_vector_rate_threshold">
 	<documentation>
- Sets the Rate Thresholds for the specified Network Attack
+ Sets the Rate Thresholds for the specified Network Attack 
  Vectors.
- When the incoming packet number per second for the specified
- Network Attack Vectors goes above this threshold then the system
- will detect this kind of Layer 4 attack and take the action to
+ When the incoming packet number per second for the specified 
+ Network Attack Vectors goes above this threshold then the system 
+ will detect this kind of Layer 4 attack and take the action to 
  log.
 
         	</documentation>
@@ -10760,7 +9551,7 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="get_network_attack_vector_rate_threshold">
 	<documentation>
- Gets the Rate Thresholds for the specified Network Attack
+ Gets the Rate Thresholds for the specified Network Attack 
  Vectors.
 
         	</documentation>
@@ -10777,7 +9568,7 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="get_all_network_attack_vector_statistics">
 	<documentation>
- Gets the statistics for all Network Attack Vectors of the
+ Gets the statistics for all Network Attack Vectors of the 
  specified DoS Network sub-profiles.
 
         	</documentation>
@@ -10791,77 +9582,6 @@ All other trademarks mentioned in this document are the property of their respec
         	</documentation>
 		<input message="tns:Security.ProfileDoS.get_network_attack_vector_statisticsRequest"/>
 		<output message="tns:Security.ProfileDoS.get_network_attack_vector_statisticsResponse"/>
-	</operation>
-	<operation name="set_network_attack_vector_auto_blacklisting_state">
-	<documentation>
- Sets the auto blacklisting state for the specified Network Attack Vectors.
- If auto blacklisting is enabled, offending IPs will be automatically
- blocked for the specified blacklist duration. See
- set_network_attack_vector_blacklist_duration for more details.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.set_network_attack_vector_auto_blacklisting_stateRequest"/>
-		<output message="tns:Security.ProfileDoS.set_network_attack_vector_auto_blacklisting_stateResponse"/>
-	</operation>
-	<operation name="get_network_attack_vector_auto_blacklisting_state">
-	<documentation>
- Gets the auto blacklisting state for the specified Network Attack Vectors.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.get_network_attack_vector_auto_blacklisting_stateRequest"/>
-		<output message="tns:Security.ProfileDoS.get_network_attack_vector_auto_blacklisting_stateResponse"/>
-	</operation>
-	<operation name="set_network_attack_vector_blacklist_detection_seconds">
-	<documentation>
- Sets the blacklist detection value (seconds) for the specified Network Attack Vectors.
- The blacklist detection value is the time that a given IP must be offending before
- being added to the blacklist.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.set_network_attack_vector_blacklist_detection_secondsRequest"/>
-		<output message="tns:Security.ProfileDoS.set_network_attack_vector_blacklist_detection_secondsResponse"/>
-	</operation>
-	<operation name="get_network_attack_vector_blacklist_detection_seconds">
-	<documentation>
- Gets the blacklist detection value for the specified Network Attack Vectors.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.get_network_attack_vector_blacklist_detection_secondsRequest"/>
-		<output message="tns:Security.ProfileDoS.get_network_attack_vector_blacklist_detection_secondsResponse"/>
-	</operation>
-	<operation name="set_network_attack_vector_blacklist_duration">
-	<documentation>
- Sets the blacklist duration (seconds) for the specified Network Attack Vectors.
- The blacklist duration is the time that an offending IP will remain in the blacklist.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.set_network_attack_vector_blacklist_durationRequest"/>
-		<output message="tns:Security.ProfileDoS.set_network_attack_vector_blacklist_durationResponse"/>
-	</operation>
-	<operation name="get_network_attack_vector_blacklist_duration">
-	<documentation>
- Gets the blacklist duration for the specified Network Attack Vectors.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.get_network_attack_vector_blacklist_durationRequest"/>
-		<output message="tns:Security.ProfileDoS.get_network_attack_vector_blacklist_durationResponse"/>
-	</operation>
-	<operation name="set_network_attack_vector_blacklist_category">
-	<documentation>
- Sets the blacklist categories for the specified Network Attack Vectors.
- The blacklist categories which blacklisted IPs should be added to.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.set_network_attack_vector_blacklist_categoryRequest"/>
-		<output message="tns:Security.ProfileDoS.set_network_attack_vector_blacklist_categoryResponse"/>
-	</operation>
-	<operation name="get_network_attack_vector_blacklist_category">
-	<documentation>
- Gets the blacklist category for the specified Network Attack Vectors.
-
-        	</documentation>
-		<input message="tns:Security.ProfileDoS.get_network_attack_vector_blacklist_categoryRequest"/>
-		<output message="tns:Security.ProfileDoS.get_network_attack_vector_blacklist_categoryResponse"/>
 	</operation>
 	<operation name="get_version">
 	<documentation>
@@ -11067,7 +9787,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_application">
 	<documentation>
  Removes specific Application Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11087,7 +9807,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_all_applications">
 	<documentation>
  Removes all Application Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11153,7 +9873,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_protocol_dns">
 	<documentation>
  Removes specific Protocol DNS Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11173,7 +9893,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_all_protocol_dnses">
 	<documentation>
  Removes all Protocol DNS Security sub-profiles from the specified profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11217,7 +9937,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_trigger_irule_state">
 	<documentation>
  Gets the trigger DoS iRule event state in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11238,7 +9958,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the operation mode of the specified anomaly.
  The available operation modes are mentioned under the OperationMode enumeration.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11258,7 +9978,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_operation_mode">
 	<documentation>
  Gets the operation mode of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11312,7 +10032,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_source_ip_based_client_side_integrity_defense_state">
 	<documentation>
  Gets the Source IP-based client side integrity defense state in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11358,7 +10078,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_based_client_side_integrity_defense_state">
 	<documentation>
  Gets the URL-based client side integrity defense state in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11404,7 +10124,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_client_side_integrity_defense_state">
 	<documentation>
  Gets the Site-wide client side integrity defense state in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11451,7 +10171,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_source_ip_based_rate_limiting_state">
 	<documentation>
  Gets the Source IP-based rate limiting state in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11471,7 +10191,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_based_rate_limiting_state">
 	<documentation>
  Sets the URL-based rate limiting state in the specified anomaly.
-
+ 
  Please see set_source_ip_based_client_side_integrity_defense_state for more information about prevention policy.
   - URL-based rate limiting: Specifies, when enabled,
                     that the system drops transactions for suspicious URLs,
@@ -11499,7 +10219,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_based_rate_limiting_state">
 	<documentation>
  Gets the URL-based rate limiting state in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11519,7 +10239,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_rate_limiting_state">
 	<documentation>
  Sets the Site-wide rate limiting state in the specified anomaly.
-
+ 
  Please see set_source_ip_based_client_side_integrity_defense_state for more information about prevention policy.
   - Site-wide rate limiting: Specifies, when enabled,
                     that the system drops transactions for suspicious sites,
@@ -11547,7 +10267,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_rate_limiting_state">
 	<documentation>
  Gets the Site-wide rate limiting state in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11567,7 +10287,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_ip_tps_increase_rate">
 	<documentation>
  Sets the TPS increase rate value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
  IP detection criteria setting is only available in TPS-based anomaly.
  It specifies that if at least one of the following criteria is met, the system treats the IP address as an attacker.
  If these numbers are reached, the system prevents further attacks by limiting the number of requests per second to the history interval.
@@ -11604,7 +10324,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_ip_tps_increase_rate">
 	<documentation>
  Gets the TPS increase rate value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11624,7 +10344,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_ip_maximum_tps">
 	<documentation>
  Sets the maximum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
  Please see set_ip_tps_increase_rate for more information about IP detection criteria and suspicious IP criteria.
   - Maximum TPS: Specifies that the system considers an IP address to be an attacker (or treats as suspicious)
                  if the number of requests sent, per second, from an IP address is equal to or greater than this number.
@@ -11649,7 +10369,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_ip_maximum_tps">
 	<documentation>
  Gets the maximum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11669,7 +10389,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_ip_minimum_tps">
 	<documentation>
  Sets the minimum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
  Please see set_ip_tps_increase_rate for more information about IP detection criteria and suspicious IP criteria.
   - Minimum TPS: Specifies that the system considers an IP address to be an attacker (or treats as suspicious)
                  if the detected TPS for a specific IP address equals, or is greater than, this number,
@@ -11696,7 +10416,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_ip_minimum_tps">
 	<documentation>
  Gets the minimum TPS value in IP detection criteria (or suspicious IP criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11716,7 +10436,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_tps_increase_rate">
 	<documentation>
  Sets the TPS increase rate value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
  URL detection criteria setting is only available in TPS-based anomaly.
  It specifies that if at least one of the following criteria is met, the system treats a URL to be under attack.
  If these numbers are reached, the system prevents further attacks by limiting the number of requests per second to the history interval.
@@ -11753,7 +10473,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_tps_increase_rate">
 	<documentation>
  Gets the TPS increase rate value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11773,7 +10493,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_maximum_tps">
 	<documentation>
  Sets the maximum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
  Please see set_url_tps_increase_rate for more information about URL detection criteria and suspicious URL criteria.
   - Maximum TPS: Specifies that the system considers a URL to be under attack (or treats as suspicious)
                  if the number of requests sent, per second, for the URL is equal to or greater than this number.
@@ -11798,7 +10518,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_maximum_tps">
 	<documentation>
  Gets the maximum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11818,7 +10538,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_url_minimum_tps">
 	<documentation>
  Sets the minimum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
  Please see set_url_tps_increase_rate for more information about URL detection criteria and suspicious URL criteria.
   - Minimum TPS: Specifies that the system considers a URL to be under attack (or treats as suspicious)
                  if the detected TPS for a specific URL equals, or is greater than, this number,
@@ -11845,7 +10565,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_url_minimum_tps">
 	<documentation>
  Gets the minimum TPS value in URL detection criteria (or suspicious URL criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11865,7 +10585,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_tps_increase_rate">
 	<documentation>
  Sets the TPS increase rate value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
  Site-wide detection criteria setting is only available in TPS-based anomaly.
  It specifies that if at least one of the following criteria is met, the system treats the whole site to be under attack.
  If these numbers are reached, the system prevents further attacks by limiting the number of requests per second to the history interval.
@@ -11902,7 +10622,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_tps_increase_rate">
 	<documentation>
  Gets the TPS increase rate value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11922,7 +10642,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_maximum_tps">
 	<documentation>
  Sets the maximum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
  Please see set_site_wide_tps_increase_rate for more information about Site-wide detection criteria and suspicious Site-wide criteria.
   - Maximum TPS: Specifies that the system considers a whole site to be under attack (or treats as suspicious)
                  if the number of requests sent, per second, for the site is equal to or greater than this number.
@@ -11947,7 +10667,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_maximum_tps">
 	<documentation>
  Gets the maximum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -11967,7 +10687,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_site_wide_minimum_tps">
 	<documentation>
  Sets the minimum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
  Please see set_site_wide_tps_increase_rate for more information about Site-wide detection criteria and suspicious Site-wide criteria.
   - Minimum TPS: Specifies that the system considers a whole site to be under attack (or treats as suspicious)
                  if the detected TPS for a specific site equals, or is greater than, this number,
@@ -11994,7 +10714,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_site_wide_minimum_tps">
 	<documentation>
  Gets the minimum TPS value in Site-wide detection criteria (or suspicious Site-wide criteria) of the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12041,7 +10761,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_escalation_period">
 	<documentation>
  Gets the escalation period (in seconds) in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12085,7 +10805,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_deescalation_period">
 	<documentation>
  Gets the de-escalation period (in seconds) in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12137,7 +10857,7 @@ All other trademarks mentioned in this document are the property of their respec
  This method has been deprecated. Please use get_escalation_period / get_deescalation_period instead.
 
  Gets the maximum prevention duration (in seconds) in the specified anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12157,7 +10877,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_latency_increase_rate">
 	<documentation>
  Sets the latency increase rate value in detection criteria of Latency-based anomaly.
-
+ 
  Detection criteria setting is only available in Latency-based anomaly.
  It specifies the criteria under which the system considers traffic to be an attack.
  First, the minimum latency must be reached, and then either the latency increase rate or the maximum latency must be reached.
@@ -12186,7 +10906,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_latency_increase_rate">
 	<documentation>
  Gets the latency increase rate value in detection criteria of Latency-based anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12206,7 +10926,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_latency">
 	<documentation>
  Sets the maximum latency value in detection criteria of Latency-based anomaly.
-
+ 
  Please see set_latency_increase_rate for more information about detection criteria.
   - Maximum latency: Specifies that the system considers traffic to be an attack if
                      the latency detection interval for a specific URL is greater than this number.
@@ -12231,7 +10951,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_latency">
 	<documentation>
  Gets the maximum latency value in detection criteria of Latency-based anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12251,7 +10971,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_minimum_latency">
 	<documentation>
  Sets the minimum latency value in detection criteria of Latency-based anomaly.
-
+ 
  Please see set_latency_increase_rate for more information about detection criteria.
   - Minimum latency: Specifies that the system considers traffic to be an attack if
                      the detection interval for a specific URL equals, or is greater than, this number,
@@ -12279,7 +10999,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_minimum_latency">
 	<documentation>
  Gets the minimum latency value in detection criteria of Latency-based anomaly.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12299,7 +11019,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_heavy_url_protection_state">
 	<documentation>
  Sets the heavy URL protection state in Application Security.
-
+ 
  Heavy URLs are those ones that may consume considerable server resources per request,
  thus it takes only low rate requests to those URLs in order to cause DoS attacks.
  Attacks will continue to be detected using the TPS-based and Latency-based anomalies.
@@ -12327,7 +11047,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_protection_state">
 	<documentation>
  Gets the heavy URL protection state in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12375,7 +11095,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_automatic_detection_state">
 	<documentation>
  Gets the automatic heavy URL detection state in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12395,7 +11115,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_include">
 	<documentation>
  Gets the included heavy URLs in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12478,7 +11198,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_exclude">
 	<documentation>
  Gets the excluded heavy URLs in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12561,7 +11281,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_heavy_url_latency_threshold">
 	<documentation>
  Sets latency threshold for automatic heavy URL detection (in milliseconds) in Application Security.
-
+ 
  Please see set_heavy_url_automatic_detection_state for more information about automatic heavy URL detection.
  You must enable automatic heavy URL detection in order to configure the latency threshold.
  You can increase or decrease this number to improve accuracy of the automatically detected heavy URLs,
@@ -12586,7 +11306,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_heavy_url_latency_threshold">
 	<documentation>
  Gets the latency threshold for automatic heavy URL detection (in milliseconds) in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12607,11 +11327,11 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the TCP dump record traffic state in Application Security.
 
- Specifies when enabled that the system records traffic (performs a TCP dump)
- when a DoS attack is underway. The system records traffic during DoS attacks
+ Specifies when enabled that the system records traffic (performs a TCP dump) 
+ when a DoS attack is underway. The system records traffic during DoS attacks 
  on the virtual server in which the attack was detected. The TCP dump files can be collected
- into the QuickView file so that F5 support can use it for solving customer cases.
- The files are located in the system in the following file path: /shared/dosl7/tcpdumps,
+ into the QuickView file so that F5 support can use it for solving customer cases. 
+ The files are located in the system in the following file path: /shared/dosl7/tcpdumps, 
  and have a pcap extension.
  The default is disabled.
 
@@ -12634,7 +11354,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_record_traffic_state">
 	<documentation>
  Gets the TCP dump record traffic state in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12655,7 +11375,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the TCP dump maximum duration (in seconds) in Application Security.
 
- The maximum time for one dump cycle. Legal values are between 1 and 300.
+ The maximum time for one dump cycle. Legal values are between 1 and 300. 
  Please see set_tcp_dump_record_traffic_state for more information about recording the traffic/TCP dump.
  The default setting is 30 seconds.
 
@@ -12678,7 +11398,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_maximum_duration">
 	<documentation>
  Gets the TCP dump maximum duration (in seconds) in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12699,7 +11419,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the TCP dump maximum size (in megabytes) in Application Security.
 
- The maximum size for a dump cycle. Legal values are between 1 and 50.
+ The maximum size for a dump cycle. Legal values are between 1 and 50. 
  Please see set_tcp_dump_record_traffic_state for more information about recording the traffic/TCP dump.
  The default setting is 10 megabytes.
 
@@ -12722,7 +11442,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_maximum_size">
 	<documentation>
  Gets the TCP dump maximum size (in megabytes) in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12745,8 +11465,8 @@ All other trademarks mentioned in this document are the property of their respec
 
  Specifies whether the system performs one dump for each DoS attack, or multiple dumps.
  When value is 0: Specifies that the system performs one dump for each DoS attack.
- When value is greater than 0: Specifies that the system performs multiple dumps for each DoS attack,
- and how long the system waits after finishing a dump cycle before starting a new cycle.
+ When value is greater than 0: Specifies that the system performs multiple dumps for each DoS attack, 
+ and how long the system waits after finishing a dump cycle before starting a new cycle. 
  Legal values are between 0 and 2600 seconds.
  Please see set_tcp_dump_record_traffic_state for more information about recording the traffic/TCP dump.
  The default setting is 120 seconds.
@@ -12770,7 +11490,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_tcp_dump_repetition_interval">
 	<documentation>
  Gets the TCP dump repetition interval (in seconds) in Application Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -12810,7 +11530,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="add_white_ip">
 	<documentation>
  Adds a list of IP addresses with subnet masks to the whitelist of DoS profile Application Security.
-
+ 
  IP address whitelist specifies IP addresses, including subnet masks, that the system considers
  legitimate and does not examine when performing DoS prevention.
 
@@ -13038,7 +11758,7 @@ All other trademarks mentioned in this document are the property of their respec
  Sets the rate increase percentage for the specified SIP Attack Vectors.  When the rate increases
  above this percentage then BIG-IP will detect the specified SIP Attack Vectors.
  Note: This value cannot be set below 100.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13058,7 +11778,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_sip_attack_vector_rate_increase">
 	<documentation>
  Gets the rate increase percentage for the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13079,7 +11799,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the rate threshold for the specified SIP Attack Vectors. When the rate increases above this threshold
  then BIG-IP will detect the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13099,7 +11819,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_sip_attack_vector_rate_threshold">
 	<documentation>
  Gets the rate threshold for the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13120,7 +11840,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the rate increase for SIP protocol errors DoS attack vector. When the rate increases above this percentage
  then BIG-IP will detect a protocol errors SIP DoS attack.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13140,7 +11860,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_sip_error_attack_rate_increase">
 	<documentation>
  Gets the rate increase for SIP protocol errors DoS attack vector.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13161,7 +11881,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the rate threshold for SIP protocol errors DoS attack vector. When the rate increases above this threshold
  then BIG-IP will detect a protocol errors SIP DoS attack.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13181,7 +11901,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_sip_error_attack_rate_threshold">
 	<documentation>
  Gets the rate threshold for SIP protocol errors DoS attack vector.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13222,7 +11942,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_sip_error_attack_detection_state">
 	<documentation>
  Gets the SIP Protocol Error Attack Detection state in Protocol SIP Security.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13242,7 +11962,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_sip_attack_vector_statistics">
 	<documentation>
  Resets the statistics for the specified SIP Attack Vectors.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13262,7 +11982,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_sip_attack_vector_statistics">
 	<documentation>
  Gets the statistics for all SIP Attack Vectors (of the specified Protocol SIP Security sub-profiles).
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13381,14 +12101,14 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="set_dns_query_vector_rate_increase">
 	<documentation>
- Sets the rate increase percentage for the specified DNS Query Vectors.
+ Sets the rate increase percentage for the specified DNS Query Vectors. 
  The system calculates the rate increase percentage for a given
  vector by comparing the 1 minute average to the 1 hour average, and
  compares the result to the percentage set. If the set percentage is
  less than or equal to the calculated value, a DoS attack is registered.
  Note that this value cannot be set below 100.
  The attack ends when this condition is no longer true.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13408,7 +12128,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_dns_query_vector_rate_increase">
 	<documentation>
  Gets the rate increase percentage for the specified DNS Query Vectors.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13449,7 +12169,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_dns_query_vector_rate_threshold">
 	<documentation>
  Gets the query vector rate threshold for the specified DNS Query Vectors.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13469,8 +12189,8 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_protocol_dns_error_attack_rate_increase">
 	<documentation>
  Sets the DNS Protocol error attack rate increase for the specified Protocol DNS Security sub-profiles.
- This is the rate increase (as a percentage) of traffic for Malformed and Malicious
- DNS packets to register a DoS attack. This number is calculated by comparing the 1
+ This is the rate increase (as a percentage) of traffic for Malformed and Malicious 
+ DNS packets to register a DoS attack. This number is calculated by comparing the 1 
  minute average to the 1 hour average.
 
         	</documentation>
@@ -13492,7 +12212,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_dns_error_attack_rate_increase">
 	<documentation>
  Gets the DNS Protocol error attack rate increase for the specified Protocol DNS Security sub-profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13512,7 +12232,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_protocol_dns_error_attack_detection_state">
 	<documentation>
  Sets the Protocol DNS Error Attack Detection state for the specified Protocol DNS Security sub-profiles.
- This Determines whether or not to include Malformed and Malicious DNS packets
+ This Determines whether or not to include Malformed and Malicious DNS packets 
  in DoS attack detection.
 
         	</documentation>
@@ -13534,7 +12254,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_protocol_dns_error_attack_detection_state">
 	<documentation>
  Gets the DNS Protocol Error Attack Detection state for the specified Protocol DNS Security sub-profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13554,7 +12274,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_dns_query_vector_statistics">
 	<documentation>
  Resets the statistics for the specified DNS Query Vectors.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13574,7 +12294,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_dns_query_vector_statistics">
 	<documentation>
  Gets the statistics for all DNS Query Vectors for the specified Protocol DNS Security sub-profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
 		<input>
@@ -13614,8 +12334,8 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_dos_network">
 	<documentation>
  Gets the DoS Network sub-profiles for the specified DoS profiles.
- With this sub-profile, the Layer 4 attacks are detected and
- actions are taken to drop the packets over the limit in one
+ With this sub-profile, the Layer 4 attacks are detected and 
+ actions are taken to drop the packets over the limit in one 
  second.
 
         	</documentation>
@@ -13636,8 +12356,8 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="add_dos_network">
 	<documentation>
- Adds a list of DoS Network sub-profiles for the specified DoS
- profiles. Note: Only one Security DoS Network sub-profile can
+ Adds a list of DoS Network sub-profiles for the specified DoS 
+ profiles. Note: Only one Security DoS Network sub-profile can 
  exist per profile.
 
         	</documentation>
@@ -13658,7 +12378,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="remove_dos_network">
 	<documentation>
- Removes a list of DoS Network sub-profiles from the specified
+ Removes a list of DoS Network sub-profiles from the specified 
  DoS profiles.
 
         	</documentation>
@@ -13679,7 +12399,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="remove_all_dos_networks">
 	<documentation>
- Removes all DoS Network sub-profiles from the specified DoS
+ Removes all DoS Network sub-profiles from the specified DoS 
  profiles.
 
         	</documentation>
@@ -13700,10 +12420,10 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="get_network_attack_vector">
 	<documentation>
- Gets the Network Attack Vectors for the specified DoS Network
+ Gets the Network Attack Vectors for the specified DoS Network 
  sub-profiles.
- A Network Attack Vector allows the user to enable DoS attack
- detection on a specific attack vector and also lets the user
+ A Network Attack Vector allows the user to enable DoS attack 
+ detection on a specific attack vector and also lets the user 
  configure attack sensitivity (rate limit &amp; threshold).
 
         	</documentation>
@@ -13724,7 +12444,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="add_network_attack_vector">
 	<documentation>
- Adds a list of Network Attack Vectors for the specified DoS
+ Adds a list of Network Attack Vectors for the specified DoS 
  Network sub-profiles.
 
         	</documentation>
@@ -13745,7 +12465,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="remove_network_attack_vector">
 	<documentation>
- Removes a list of Network Attack Vectors from the specified DoS
+ Removes a list of Network Attack Vectors from the specified DoS 
  Network sub-profiles.
 
         	</documentation>
@@ -13766,7 +12486,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="remove_all_network_attack_vectors">
 	<documentation>
- Removes all Network Attack Vectors from the specified DoS
+ Removes all Network Attack Vectors from the specified DoS 
  Network sub-profiles.
 
         	</documentation>
@@ -13788,9 +12508,9 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_network_attack_vector_rate_limit">
 	<documentation>
  Sets the Rate Limits for the specified Network Attack Vectors.
- When the incoming packet number per second for the specified
- Network Attack Vectors is over this limit then the system will
- drop all the over limit packets in this second. The limit number
+ When the incoming packet number per second for the specified 
+ Network Attack Vectors is over this limit then the system will 
+ drop all the over limit packets in this second. The limit number 
  of incoming packets will be allowed again in the next second.
 
         	</documentation>
@@ -13831,11 +12551,11 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="set_network_attack_vector_rate_threshold">
 	<documentation>
- Sets the Rate Thresholds for the specified Network Attack
+ Sets the Rate Thresholds for the specified Network Attack 
  Vectors.
- When the incoming packet number per second for the specified
- Network Attack Vectors goes above this threshold then the system
- will detect this kind of Layer 4 attack and take the action to
+ When the incoming packet number per second for the specified 
+ Network Attack Vectors goes above this threshold then the system 
+ will detect this kind of Layer 4 attack and take the action to 
  log.
 
         	</documentation>
@@ -13856,7 +12576,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="get_network_attack_vector_rate_threshold">
 	<documentation>
- Gets the Rate Thresholds for the specified Network Attack
+ Gets the Rate Thresholds for the specified Network Attack 
  Vectors.
 
         	</documentation>
@@ -13897,7 +12617,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="get_all_network_attack_vector_statistics">
 	<documentation>
- Gets the statistics for all Network Attack Vectors of the
+ Gets the statistics for all Network Attack Vectors of the 
  specified DoS Network sub-profiles.
 
         	</documentation>
@@ -13919,173 +12639,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_network_attack_vector_statistics">
 	<documentation>
  Gets the statistics for the specified Network Attack Vectors.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_network_attack_vector_auto_blacklisting_state">
-	<documentation>
- Sets the auto blacklisting state for the specified Network Attack Vectors.
- If auto blacklisting is enabled, offending IPs will be automatically
- blocked for the specified blacklist duration. See
- set_network_attack_vector_blacklist_duration for more details.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_network_attack_vector_auto_blacklisting_state">
-	<documentation>
- Gets the auto blacklisting state for the specified Network Attack Vectors.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_network_attack_vector_blacklist_detection_seconds">
-	<documentation>
- Sets the blacklist detection value (seconds) for the specified Network Attack Vectors.
- The blacklist detection value is the time that a given IP must be offending before
- being added to the blacklist.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_network_attack_vector_blacklist_detection_seconds">
-	<documentation>
- Gets the blacklist detection value for the specified Network Attack Vectors.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_network_attack_vector_blacklist_duration">
-	<documentation>
- Sets the blacklist duration (seconds) for the specified Network Attack Vectors.
- The blacklist duration is the time that an offending IP will remain in the blacklist.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_network_attack_vector_blacklist_duration">
-	<documentation>
- Gets the blacklist duration for the specified Network Attack Vectors.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_network_attack_vector_blacklist_category">
-	<documentation>
- Sets the blacklist categories for the specified Network Attack Vectors.
- The blacklist categories which blacklisted IPs should be added to.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Security/ProfileDoS"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_network_attack_vector_blacklist_category">
-	<documentation>
- Gets the blacklist category for the specified Network Attack Vectors.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Security/ProfileDoS"/>
@@ -14161,8 +12714,8 @@ All other trademarks mentioned in this document are the property of their respec
                               the system detects that this URL is under attack.
                               In order to stop the attack, the system drops some requests from the suspicious IP address and/or to the suspicious URL.
 
- The Protocol DNS Security sub-profile allows you to specify DNS Query Vectors
- to be considered for DoS attack detection. You can also select whether
+ The Protocol DNS Security sub-profile allows you to specify DNS Query Vectors 
+ to be considered for DoS attack detection. You can also select whether 
  or not to consider Malformed and Malicious DNS packets for DoS attack
  detection, and configure values at which to start dropping these packets.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!--
-Copyright (c) 1996-2016, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
+Copyright (c) 1996-2015, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
 
 F5, F5 Networks, the F5 logo, BIG-IP, 3-DNS, iControl, GLOBAL-SITE, SEE-IT, EDGE-FX, FireGuard, Internet Control Architecture, IP Application Switch, iRules, PACKET VELOCITY, SYN Check, CONTROL YOUR WORLD, OneConnect, ZoneRunner, uRoam, FirePass, and TrafficShield are registered trademarks or trademarks of F5 Networks, Inc., in the U.S. and certain other countries. 
 
@@ -4344,11 +4344,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>STATISTIC_DNS_CACHE_RESOLVER_SEC_SECURE</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_CACHE_RESOLVER_RPZ_REWRITES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_CACHE_RESOLVER_RPZ_REWRITES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 				<xsd:enumeration value="STATISTIC_DNS_REQUESTS_TO_CACHE">
 					<xsd:annotation>
 						<xsd:documentation>STATISTIC_DNS_REQUESTS_TO_CACHE</xsd:documentation>
@@ -4717,11 +4712,6 @@ All other trademarks mentioned in this document are the property of their respec
 				<xsd:enumeration value="STATISTIC_DNS_OP_UPDATE">
 					<xsd:annotation>
 						<xsd:documentation>STATISTIC_DNS_OP_UPDATE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_OP_OTHER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_OP_OTHER</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
 				<xsd:enumeration value="STATISTIC_DNS_ZONE_IXFR">
@@ -6709,1021 +6699,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>STATISTIC_SSL_COMMON_FWDP_HOSTNAME_BYPASSES</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_TOTAL_END_POINTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_TOTAL_END_POINTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_REQUESTS_GTM_REWRITES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_REQUESTS_GTM_REWRITES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_ACCEPTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_ACCEPTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_CURRENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_CURRENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_MAXIMUM">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_MAXIMUM</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_BLOCKED_COMMANDS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_BLOCKED_COMMANDS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_CONNECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_CONNECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_CURRENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_CURRENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_MAXIMUM">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_MAXIMUM</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_FAILED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_FAILED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_RENEGOTIATIONS_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_RENEGOTIATIONS_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FASTL4_LATE_BINDING_SUCCESSFUL_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FASTL4_LATE_BINDING_SUCCESSFUL_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FASTL4_LATE_BINDING_TIMED_OUT_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FASTL4_LATE_BINDING_TIMED_OUT_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_STATUS_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_STATUS_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_VALIDATION_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_VALIDATION_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_CERTIFICATE_STATUS_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_CERTIFICATE_STATUS_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_HTTP_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_HTTP_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_TIMEOUTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_TIMEOUTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_PORT_BLOCKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_PORT_BLOCKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_CLIENTS_REACHED_LIMIT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_CLIENTS_REACHED_LIMIT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_ZOMBIE_PORT_BLOCKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_ZOMBIE_PORT_BLOCKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_CLIENTS_REACHED_LIMIT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_CLIENTS_REACHED_LIMIT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATION_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATION_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_DEALLOCATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_DEALLOCATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_CREATED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_CREATED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_DELETED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_DELETED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCK_CONNECTIONS_KILLED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCK_CONNECTIONS_KILLED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_QUERIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_QUERIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_ALLOWED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_ALLOWED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_DROPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_DROPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_TRUNCATED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_TRUNCATED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_NXDOMAIN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_NXDOMAIN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_NOERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_NOERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_REFUSED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_REFUSED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_IN_RESUBMITTED_FOR_RETRY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_IN_RESUBMITTED_FOR_RETRY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_AND_NOT_DELIVERABLE_TO_ORIGINATOR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_AND_NOT_DELIVERABLE_TO_ORIGINATOR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_ROUTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_ROUTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_UNROUTABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_UNROUTABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_A_FULL_QUEUE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_A_FULL_QUEUE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_CLOSED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_CLOSED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_AN_INTERNAL_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_AN_INTERNAL_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_PERSIST_KEY_IN_USE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_PERSIST_KEY_IN_USE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BADMSGS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BADMSGS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_DROPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_DROPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INVITE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INVITE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ACK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ACK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_OPTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_OPTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BYE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BYE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CANCEL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CANCEL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REGISTER_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REGISTER_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PUBLISH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PUBLISH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOTIFY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOTIFY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SUBSCRIBE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SUBSCRIBE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MESSAGE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MESSAGE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PRACK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PRACK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_OTHER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_OTHER</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PROVISIONAL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PROVISIONAL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SUCCESSFUL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SUCCESSFUL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REDIRECTION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REDIRECTION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CLIENT_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CLIENT_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_GLOBAL_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_GLOBAL_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MESSAGE_LIMIT_EXCEEDED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MESSAGE_LIMIT_EXCEEDED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MAX_FORWARDS_CHECK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MAX_FORWARDS_CHECK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BAD_REQUEST">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BAD_REQUEST</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_FOUND">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_FOUND</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TRANSACTION_DOES_NOT_EXIST">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TRANSACTION_DOES_NOT_EXIST</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TOO_MANY_HOPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TOO_MANY_HOPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNKNOWN_PARSE_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNKNOWN_PARSE_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CONTENT_LENGTH_MISMATCH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CONTENT_LENGTH_MISMATCH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_EXTRANEOUS_HEADER_FIELD">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_EXTRANEOUS_HEADER_FIELD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INVALID_CONTENT_LENGTH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INVALID_CONTENT_LENGTH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQ_FIELD_OVERLARGE_VALUES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQ_FIELD_OVERLARGE_VALUES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_RESP_FIELD_OVERLARGE_VALUES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_RESP_FIELD_OVERLARGE_VALUES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNTERMINATED_QUOTED_STRING">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNTERMINATED_QUOTED_STRING</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MALFORMED_REQUEST_URI">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MALFORMED_REQUEST_URI</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNKNOWN_PROTOCOL_VERSION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNKNOWN_PROTOCOL_VERSION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CSEQ_METHOD_MISMATCH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CSEQ_METHOD_MISMATCH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_BYTES_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_BYTES_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_BYTES_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_BYTES_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_PACKETS_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_PACKETS_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_BYTES_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_BYTES_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_BYTES_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_BYTES_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_PACKETS_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_PACKETS_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_EVICTION_POLICY_EVICTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_EVICTION_POLICY_EVICTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CONNECTION_FLOW_MISS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CONNECTION_FLOW_MISS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_SYNCOOKIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_SYNCOOKIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_REJECTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_REJECTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_HW_SYNCOOKIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_HW_SYNCOOKIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_HW_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_HW_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_HITS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_HITS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_REJECTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_REJECTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FW_RULE_LAST_HIT_TIME">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FW_RULE_LAST_HIT_TIME</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_ASSOCIATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_ASSOCIATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_CLOSING">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_CLOSING</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_CONFIRMED_ADDRESSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_CONFIRMED_ADDRESSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_UNCONFIRMED_ADDRESSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_UNCONFIRMED_ADDRESSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_ACTIVE_PATHS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_ACTIVE_PATHS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_INACTIVE_PATHS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_INACTIVE_PATHS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_TLS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_TLS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_TLS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_TLS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_AGGREGATE_RENEGOTIATIONS_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_AGGREGATE_RENEGOTIATIONS_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FTP_FTPS_SESSIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FTP_FTPS_SESSIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_READ_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_READ_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_WRITE_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_WRITE_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FTP_PASSTHRU_TRANSITIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FTP_PASSTHRU_TRANSITIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_DISCARDED_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_DISCARDED_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_INSPECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_INSPECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_MALFORMED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_MALFORMED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_CACHE_LOOKUPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_CACHE_LOOKUPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_CACHE_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_CACHE_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_VCMP_RED_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_VCMP_RED_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_SESSION_MIRRORING_SUCCESS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_SESSION_MIRRORING_SUCCESS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_SESSION_MIRRORING_FAILURE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_SESSION_MIRRORING_FAILURE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_PEER_READY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_PEER_READY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_RECV">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_RECV</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_HS_SUCCESS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_HS_SUCCESS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_FAILURE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_FAILURE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_DTLS_TX_PUSHBACKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_DTLS_TX_PUSHBACKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_CIPHER_CAMELLIA_BULK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_CIPHER_CAMELLIA_BULK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_NAPTR_REQS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_NAPTR_REQS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_TRANSMITTED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_TRANSMITTED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_RECEIVED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_RECEIVED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_RPF">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_RPF</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_WRONG_INTERFACE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_WRONG_INTERFACE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_NO_ROUTE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_NO_ROUTE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_ROUTES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_ROUTES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_TRANSMITTED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_TRANSMITTED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_RECEIVED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_RECEIVED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_RPF">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_RPF</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_WRONG_INTERFACE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_WRONG_INTERFACE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_NO_ROUTE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_NO_ROUTE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_ROUTES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_ROUTES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_ACTIVE_HANDSHAKES_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_ACTIVE_HANDSHAKES_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CURRENT_ACTIVE_HANDSHAKES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CURRENT_ACTIVE_HANDSHAKES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_1K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_1K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_2K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_2K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_3K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_3K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_4K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_4K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_5K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_5K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_6K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_6K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_7K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_7K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_8K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_8K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_9K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_9K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_10K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_10K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_11K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_11K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_12K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_12K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_13K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_13K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_14K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_14K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_15K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_15K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_16K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_16K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_STANDBY_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_STANDBY_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE_413_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE_413_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME_416_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME_416_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE_480_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE_480_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTED_482_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTED_482_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TOO_MANY_HOPS_483_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TOO_MANY_HOPS_483_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE_484_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE_484_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE_488_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE_488_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR_500_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR_500_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_IMPLEMENTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_IMPLEMENTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_IMPLEMENTED_501_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_IMPLEMENTED_501_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE_503_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE_503_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED_505_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED_505_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BADMSGS_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BADMSGS_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_DROPS_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_DROPS_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INFO">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INFO</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REFER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REFER</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UPDATE_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UPDATE_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BAD_REQUEST_400_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BAD_REQUEST_400_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_FOUND_404_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_FOUND_404_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:simpleType name="Common.MetadataPersistence">
@@ -8107,20 +7082,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<part name="return" type="tns:Common.StringSequence"/>
 </message>
 
-<message name="GlobalLB.WideIP.set_descriptionRequest">
-	<part name="wide_ips" type="tns:Common.StringSequence"/>
-	<part name="descriptions" type="tns:Common.StringSequence"/>
-</message>
-<message name="GlobalLB.WideIP.set_descriptionResponse">
-</message>
-
-<message name="GlobalLB.WideIP.get_descriptionRequest">
-	<part name="wide_ips" type="tns:Common.StringSequence"/>
-</message>
-<message name="GlobalLB.WideIP.get_descriptionResponse">
-	<part name="return" type="tns:Common.StringSequence"/>
-</message>
-
 <message name="GlobalLB.WideIP.get_wideipRequest">
 	<part name="aliases" type="tns:Common.StringSequence"/>
 </message>
@@ -8201,6 +7162,20 @@ All other trademarks mentioned in this document are the property of their respec
 	<part name="wideip_rules" type="tns:GlobalLB.WideIP.WideIPRuleSequenceSequence"/>
 </message>
 <message name="GlobalLB.WideIP.remove_wideip_ruleResponse">
+</message>
+
+<message name="GlobalLB.WideIP.set_descriptionRequest">
+	<part name="wide_ips" type="tns:Common.StringSequence"/>
+	<part name="descriptions" type="tns:Common.StringSequence"/>
+</message>
+<message name="GlobalLB.WideIP.set_descriptionResponse">
+</message>
+
+<message name="GlobalLB.WideIP.get_descriptionRequest">
+	<part name="wide_ips" type="tns:Common.StringSequence"/>
+</message>
+<message name="GlobalLB.WideIP.get_descriptionResponse">
+	<part name="return" type="tns:Common.StringSequence"/>
 </message>
 
 <message name="GlobalLB.WideIP.remove_all_wideip_rulesRequest">
@@ -8330,13 +7305,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_object_status">
  	<documentation>
  Gets the statuses of the specified wide IPs.
-
- Deprecated behavior: This method returns the best possible answer based on
- the availability status. For example, if the A wide IP with the specified name
- has an 'AVAILABILITY_STATUS_RED' status and the AAAA wide IP with the
- specified name has an 'AVAILABILITY_STATUS_GREEN' status, then the full object
- status of the AAAA wide IP will be returned as the status of the specified
- wide IP.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_object_statusRequest"/>
@@ -8346,9 +7315,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets a list of wide IPs.
 
- Deprecated behavior: This method returns a list of unique wide IP names. If
- there is more than one wide IP with the same name (but of different types A,
- AAAA, or CNAME), only one of these wide IPs is reported.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_listRequest"/>
@@ -8356,15 +7322,8 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="create">
 	<documentation>
- Creates the specified wide IPs with some basic attributes.
+ Creates the specified wide IPs with some basic attributes. 
 
- Deprecated behavior: This method will create an A and AAAA type wide IP
- and add the pools and rules to both wide IPs, provided the matching type
- pools exist and that all rule dependencies can be resolved on
- the given type of wide IP. If a pool name that corresponds to a CNAME
- type pool is in the specified wideip_pools list, a CNAME type wide IP
- will be created as well and the specified CNAME pool will be added to all
- three wide IPs, type A, AAAA, and CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.createRequest"/>
@@ -8372,10 +7331,8 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="delete_wideip">
 	<documentation>
- Deletes the specified wide IPs.
-
- Deprecated behavior: This method will delete all wide IPs of the specified
- names and matching types A, AAAA, or CNAME.
+ Deletes the specified wide IPs. 
+  
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.delete_wideipRequest"/>
@@ -8384,9 +7341,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="delete_all_wideips">
 	<documentation>
  Deletes all wide IPs.
-
- Deprecated behavior: This method will delete all wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.delete_all_wideipsRequest"/>
@@ -8396,9 +7351,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the states indicating whether to maintain a connection between an LDNS and
  a particular virtual server.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_persistence_stateRequest"/>
@@ -8408,13 +7361,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the states indicating whether to maintain a connection between an LDNS and
  a particular virtual server.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_persistence_stateRequest"/>
@@ -8422,11 +7369,9 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="set_persistence_ttl">
 	<documentation>
- Sets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate
+ Sets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate 
  the time to maintain a connection between an LDNS and a particular virtual server.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_persistence_ttlRequest"/>
@@ -8434,15 +7379,9 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="get_persistence_ttl">
 	<documentation>
- Gets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate
+ Gets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate 
  the time to maintain a connection between an LDNS and a particular virtual server.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_persistence_ttlRequest"/>
@@ -8451,9 +7390,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_enabled_state">
 	<documentation>
  Sets the enabled states for the specified wide IPs.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_enabled_stateRequest"/>
@@ -8462,13 +7399,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_enabled_state">
 	<documentation>
  Gets the enabled states for the specified wide IPs.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_enabled_stateRequest"/>
@@ -8483,11 +7414,6 @@ All other trademarks mentioned in this document are the property of their respec
  faster to IPv6 requests for which it does not have AAAA
  records configured. The default is disabled.
 
- Deprecated behavior: This field will be set only on specified wide IPs matching
- type AAAA. If no wide IP of this name exists, it will be an error; otherwise
- if the specified wide IP name does exist but is of a different type (A or
- CNAME), no change is made.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_ipv6_no_error_response_stateRequest"/>
 		<output message="tns:GlobalLB.WideIP.set_ipv6_no_error_response_stateResponse"/>
@@ -8497,40 +7423,23 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the state indicating whether the system should return a
  NoError response to IPv6 wide IP requests.
 
- Deprecated behavior: This method returns the field from the wide IP matching
- the specified name and of type AAAA. In that case that the specified wide IP
- of type AAAA does not exist, but other types (CNAME or A) do exist, then the
- default is value 'STATE_DISABLED' is returned. If no wide IP of the specified
- name exists in any type A, AAAA, or CNAME, this method produces an error.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_ipv6_no_error_response_stateRequest"/>
 		<output message="tns:GlobalLB.WideIP.get_ipv6_no_error_response_stateResponse"/>
 	</operation>
 	<operation name="set_ipv6_no_error_negative_ttl">
 	<documentation>
- Sets the NoError negative caching TTL values of the specified wide IPs.
+ Sets the NoError negative caching TTL values of the specified wide IPs. 
  These values (in seconds) indicate the time to maintain the negative answer
  by a downstream DNS cache.
-
- Deprecated behavior: This field will be set only on specified wide IPs matching
- type AAAA. If no wide IP of this name exists, it will be an error; otherwise
- if the specified wide IP name does exist but is of a different type (A or
- CNAME), no change is made.
-
+ 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_ipv6_no_error_negative_ttlRequest"/>
 		<output message="tns:GlobalLB.WideIP.set_ipv6_no_error_negative_ttlResponse"/>
 	</operation>
 	<operation name="get_ipv6_no_error_negative_ttl">
 	<documentation>
- Gets the NoError negative caching TTL values of the specified wide IPs.
-
- Deprecated behavior: This method returns the field from the wide IP matching
- the specified name and of type AAAA. In that case that the specified wide IP
- of type AAAA does not exist, but other types (CNAME or A) do exist, then the
- default is value '0' is returned. If no wide IP of the specified name exists
- in any type A, AAAA, or CNAME, this method produces an error.
+ Gets the NoError negative caching TTL values of the specified wide IPs. 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_ipv6_no_error_negative_ttlRequest"/>
@@ -8538,11 +7447,9 @@ All other trademarks mentioned in this document are the property of their respec
 	</operation>
 	<operation name="set_lb_method">
 	<documentation>
- Sets the load balancing methods for the specified wide IPs.  This is used by the
+ Sets the load balancing methods for the specified wide IPs.  This is used by the 
  wide IPs when picking a pool to use when responding to a DNS request.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_lb_methodRequest"/>
@@ -8551,13 +7458,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_lb_method">
 	<documentation>
  Gets the load balancing methods for the specified wide IPs.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_lb_methodRequest"/>
@@ -8566,11 +7467,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_application">
 	<documentation>
  Sets the names of the applications for the specified wide IPs.
-
- Deprecated behavior: This method will add each specified wide IP
- matching types A or AAAA to the specified application. If no wide IP
- with the specified name and matching type A or AAAA exists, it is an
- error.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_applicationRequest"/>
@@ -8581,12 +7478,7 @@ All other trademarks mentioned in this document are the property of their respec
  Resets the names of the applications for the specified wide
  IPs (i.e., sets them to nothing).  This function
  disassociates each wide IP given from any application.
-
- Deprecated behavior: This method will remove each specified wide IP
- matching types A or AAAA from the specified application. If no wide IP
- with the specified name and matching type A or AAAA exists, it is an
- error.
-
+ 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.reset_applicationRequest"/>
 		<output message="tns:GlobalLB.WideIP.reset_applicationResponse"/>
@@ -8594,11 +7486,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_application">
 	<documentation>
  Gets the names of the applications for the specified wide IPs.
-
- Deprecated behavior: This method returns a list of unique application
- names. Therefore if there is more than one wide IP of the specified
- wide IP name (but of different types A or AAAA) associated with an
- application, only one of these applications is reported.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_applicationRequest"/>
@@ -8607,15 +7495,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_last_resort_pool">
 	<documentation>
  Sets the names of the last resort pools for the specified wide IPs.
-
- Deprecated behavior: This method will attempt to add a last resort pool
- on each of the wide IPs of the specified name and matching the type A,
- AAAA, or CNAME. First we will attempt to add a last resort pool of the
- type matching the wide IP's type. If the matching type pool does not exist,
- we will attempt to add a CNAME type pool of the specified name to the A
- and AAAA wide IP. If it is not possible to add at least one last resort
- pool of the specified name to the specified wide IP of any type, an error
- will occur.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_last_resort_poolRequest"/>
@@ -8624,55 +7504,17 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_last_resort_pool">
 	<documentation>
  Gets the names of the last resort pools for the specified wide IPs.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_last_resort_poolRequest"/>
 		<output message="tns:GlobalLB.WideIP.get_last_resort_poolResponse"/>
-	</operation>
-	<operation name="set_description">
-	<documentation>
- Sets the description for a set of wide IPs.
-
- This is an arbitrary field which can be used for any purpose.
-
- Deprecated behavior: This field will be set on all specified wide IPs
- matching types A, AAAA, or CNAME.
-
-        	</documentation>
-		<input message="tns:GlobalLB.WideIP.set_descriptionRequest"/>
-		<output message="tns:GlobalLB.WideIP.set_descriptionResponse"/>
-	</operation>
-	<operation name="get_description">
-	<documentation>
- Gets the descriptions for a set of wide IPs.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
-
-        	</documentation>
-		<input message="tns:GlobalLB.WideIP.get_descriptionRequest"/>
-		<output message="tns:GlobalLB.WideIP.get_descriptionResponse"/>
 	</operation>
 	<operation name="get_wideip">
 	<documentation>
  Gets the lists of wide IPs associated with the specified aliases.
  Each alias maps to exactly one wide IP.
 
- Deprecated behavior: This method returns a list of unique wide IP names.
- Therefore if there is more than one wide IP of the same name (but of
- different types A, AAAA, or CNAME), associated with the specified alias
- name, only one of these duplicate wide IPs is reported.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_wideipRequest"/>
@@ -8683,10 +7525,6 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the lists of aliases the specified wide IPs are associated with.
  A given wide IP can have more than one alias.
 
- Deprecated behavior: This method returns a list of unique aliases. Therefore
- if there is more than one alias of the same name on the specified wide IP of
- given name (but of different types A, AAAA, or CNAME), only one of these
- duplicate aliases is reported.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_aliasRequest"/>
@@ -8697,8 +7535,6 @@ All other trademarks mentioned in this document are the property of their respec
  Adds/associates aliases to the specified wide IPs.
  A given wide IP can have more than one alias.
 
- Deprecated behavior: This method adds each specified alias to each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.add_aliasRequest"/>
@@ -8709,9 +7545,6 @@ All other trademarks mentioned in this document are the property of their respec
  Removes aliases from the specified wide IPs.
  A given wide IP can have more than one alias.
 
- Deprecated behavior: This method removes the specified aliases from each
- of the wide IPs of the specified name and matching the type A, AAAA, or
- CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_aliasRequest"/>
@@ -8721,8 +7554,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Removes all aliases from the specified wide IPs.
 
- Deprecated behavior: This method removes all aliases from each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_all_aliasesRequest"/>
@@ -8732,10 +7563,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the lists of wide IP pools the specified wide IPs are associated with.
 
- Deprecated behavior: This method returns a list of unique pools. Therefore
- if there is more than one pool of the same name on the specified wide IP of
- given name (but of different types A, AAAA, or CNAME), only one of these
- duplicate pools is reported.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_wideip_poolRequest"/>
@@ -8745,10 +7572,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Adds/associates wide IP pools to the specified wide IPs.
 
- Deprecated behavior: This method adds each specified pool to each of the
- wide IPs of the specified name, if the given pool exists with a type of A,
- AAAA, or CNAME and matches the given wide IP type. Note that CNAME pools
- will also be added to any specified wide IP of type A or AAAA.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.add_wideip_poolRequest"/>
@@ -8758,10 +7581,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Removes wide IP pools from the specified wide IPs.
 
- Deprecated behavior: This method removes the specified pools from each
- of the wide IPs of the specified name and matching the type A, AAAA, or
- CNAME. Note that CNAME pools of the specified name on A or AAAA pools
- will also be removed.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_wideip_poolRequest"/>
@@ -8771,8 +7590,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Removes all wide IP pools from the specified wide IPs.
 
- Deprecated behavior: This method removes all pools from each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_all_wideip_poolsRequest"/>
@@ -8782,10 +7599,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the lists of wide IP rules the specified wide IPs are associated with.
 
- Deprecated behavior: This method returns a list of unique rules. Therefore
- if there is more than one rule of the same name on the specified wide IP of
- given name (but of different types A, AAAA, or CNAME), only one of these
- duplicate rules is reported.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_wideip_ruleRequest"/>
@@ -8795,24 +7608,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Adds/associates wide IP rules to the specified wide IPs.
 
- Deprecated behavior: This method adds each specified rule to each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
-
- *IMPORTANT*
-
- Please note that adding rules to a wide IP which reference objects like
- pools may result in an error.
-
- For example, a rule references a pool name and this pool only exists in the
- configuration as a pool of the given name and type A. If the user attempts
- to add this rule to a given wide IP, and that wide IP exists as both a type
- A wide IP and a type AAAA wide IP (of the same, specified name), it will
- result in a failure. This is because the type AAAA wide IP will interpret
- the rule's pool reference as a reference to a pool with the given name and
- type AAAA (the type of the wide IP the rule is on). Since a pool of the
- specified name and type AAAA does not exist, it fails. Therefore, it is highly
- recommended to use the WideIPV2::add_wide_ip_rule method, so the user can
- specify explicitly which wide IP, using both name and type, to add the rule to.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.add_wideip_ruleRequest"/>
@@ -8822,19 +7617,33 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Removes wide IP rules from the specified wide IPs.
 
- Deprecated behavior: This method removes the specified rules from each
- of the wide IPs of the specified name and matching the type A, AAAA, or CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_wideip_ruleRequest"/>
 		<output message="tns:GlobalLB.WideIP.remove_wideip_ruleResponse"/>
 	</operation>
+	<operation name="set_description">
+	<documentation>
+ Sets the description for a set of wide IPs.
+
+ This is an arbitrary field which can be used for any purpose.
+
+        	</documentation>
+		<input message="tns:GlobalLB.WideIP.set_descriptionRequest"/>
+		<output message="tns:GlobalLB.WideIP.set_descriptionResponse"/>
+	</operation>
+	<operation name="get_description">
+	<documentation>
+ Gets the descriptions for a set of wide IPs.
+
+        	</documentation>
+		<input message="tns:GlobalLB.WideIP.get_descriptionRequest"/>
+		<output message="tns:GlobalLB.WideIP.get_descriptionResponse"/>
+	</operation>
 	<operation name="remove_all_wideip_rules">
 	<documentation>
  Removes all wide IP rules from the specified wide IPs.
 
- Deprecated behavior: This method removes all rules from each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_all_wideip_rulesRequest"/>
@@ -8843,9 +7652,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_statistics">
 	<documentation>
  Resets the statistics for the specified wide IPs.
-
- Deprecated behavior: This method will clear all statistics on each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.reset_statisticsRequest"/>
@@ -8854,10 +7661,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_statistics">
 	<documentation>
  Gets the statistics for all the wide IPs.
-
- Deprecated behavior: A given statistics entry returned from this method
- represents a sum of each of the individual statistics on wide IPs of the
- specified same name and types A, AAAA, and CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_all_statisticsRequest"/>
@@ -8866,10 +7670,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_statistics">
 	<documentation>
  Gets the statistics for the specified wide IPs.
-
- Deprecated behavior: A given statistics entry returned from this method
- represents a sum of each of the individual statistics on wide IPs of the
- specified same name and types A, AAAA, and CNAME.
+ 
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_statisticsRequest"/>
@@ -8887,11 +7688,6 @@ All other trademarks mentioned in this document are the property of their respec
  In addition to name/value pair, metadata also has a persistence
  attribute. See Common::MetadataPersistence for its definition.
 
- Deprecated behavior: This method returns a list of unique metadata
- objects. Therefore if there is more than one metadata of the same
- name on the specified wide IP name (but of different type A, AAAA,
- or CNAME), only one of these duplicate metadata objects is reported.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_metadataRequest"/>
 		<output message="tns:GlobalLB.WideIP.get_metadataResponse"/>
@@ -8901,9 +7697,6 @@ All other trademarks mentioned in this document are the property of their respec
  Adds the metadata for the specified wide IPs.
  For definition of the metadata, refer to the get_metadata method
  description.
-
- Deprecated behavior: This method adds the specified metadata
- on the specified wide IPs matching types A, AAAA, or CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.add_metadataRequest"/>
@@ -8915,9 +7708,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This method removes the specified metadata
- from all specified wide IPs matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_metadataRequest"/>
 		<output message="tns:GlobalLB.WideIP.remove_metadataResponse"/>
@@ -8925,9 +7715,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_all_metadata">
 	<documentation>
  Removes all the metadata instances for the specified wide IPs.
-
- Deprecated behavior: This method removes all metadata from all specified
- wide IPs matching types A, AAAA, or CNAME.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.remove_all_metadataRequest"/>
@@ -8939,9 +7726,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This field will be set on all specified wide IP
- metadatas matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_metadata_valueRequest"/>
 		<output message="tns:GlobalLB.WideIP.set_metadata_valueResponse"/>
@@ -8951,15 +7735,6 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the metadata values for the specified metadata.
  For definition of the metadata, refer to the get_metadata method
  description.
-
- Deprecated behavior: This method returns the field from a wide IP
- metadata matching the specified name. The field will be returned from
- a type A wide IP metadata of the specified name, unless that does not
- exist. In that case then the field from the type AAAA wide IP
- metadata is used and if that also does not exist, finally the field
- from the type CNAME wide IP metadata is used. If the CNAME type
- wide IP metadata of the specified name also does not exist, this
- method produces an error.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_metadata_valueRequest"/>
@@ -8971,9 +7746,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This field will be set on all specified wide IP
- metadatas matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_metadata_descriptionRequest"/>
 		<output message="tns:GlobalLB.WideIP.set_metadata_descriptionResponse"/>
@@ -8983,15 +7755,6 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the metadata descriptions for the specified metadata.
  For definition of the metadata, refer to the get_metadata method
  description.
-
- Deprecated behavior: This method returns the field from a wide IP
- metadata matching the specified name. The field will be returned from
- a type A wide IP metadata of the specified name, unless that does not
- exist. In that case then the field from the type AAAA wide IP
- metadata is used and if that also does not exist, finally the field
- from the type CNAME wide IP metadata is used. If the CNAME type
- wide IP metadata of the specified name also does not exist, this
- method produces an error.
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_metadata_descriptionRequest"/>
@@ -9003,9 +7766,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This field will be set on all specified wide IP
- metadatas matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_metadata_persistenceRequest"/>
 		<output message="tns:GlobalLB.WideIP.set_metadata_persistenceResponse"/>
@@ -9016,15 +7776,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This method returns the field from a wide IP
- metadata matching the specified name. The field will be returned from
- a type A wide IP metadata of the specified name, unless that does not
- exist. In that case then the field from the type AAAA wide IP
- metadata is used and if that also does not exist, finally the field
- from the type CNAME wide IP metadata is used. If the CNAME type
- wide IP metadata of the specified name also does not exist, this
- method produces an error.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_metadata_persistenceRequest"/>
 		<output message="tns:GlobalLB.WideIP.get_metadata_persistenceResponse"/>
@@ -9034,9 +7785,6 @@ All other trademarks mentioned in this document are the property of their respec
  Sets the load balancing log verbosity for the specified wide IPs.
  The log reveals the reason why GTM makes a load-balancing decision.
 
- Deprecated behavior: This field will be set on all specified wide IPs
- matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.set_lb_decision_log_verbosityRequest"/>
 		<output message="tns:GlobalLB.WideIP.set_lb_decision_log_verbosityResponse"/>
@@ -9045,13 +7793,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the load balancing log verbosity for the specified wide IPs.
 
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
-
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_lb_decision_log_verbosityRequest"/>
 		<output message="tns:GlobalLB.WideIP.get_lb_decision_log_verbosityResponse"/>
@@ -9059,6 +7800,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_version">
 	<documentation>
  Gets the version information for this interface.
+
 
         	</documentation>
 		<input message="tns:GlobalLB.WideIP.get_versionRequest"/>
@@ -9073,13 +7815,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_object_status">
 	<documentation>
  Gets the statuses of the specified wide IPs.
-
- Deprecated behavior: This method returns the best possible answer based on
- the availability status. For example, if the A wide IP with the specified name
- has an 'AVAILABILITY_STATUS_RED' status and the AAAA wide IP with the
- specified name has an 'AVAILABILITY_STATUS_GREEN' status, then the full object
- status of the AAAA wide IP will be returned as the status of the specified
- wide IP.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9101,9 +7837,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets a list of wide IPs.
 
- Deprecated behavior: This method returns a list of unique wide IP names. If
- there is more than one wide IP with the same name (but of different types A,
- AAAA, or CNAME), only one of these wide IPs is reported.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9123,15 +7856,8 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="create">
 	<documentation>
- Creates the specified wide IPs with some basic attributes.
+ Creates the specified wide IPs with some basic attributes. 
 
- Deprecated behavior: This method will create an A and AAAA type wide IP
- and add the pools and rules to both wide IPs, provided the matching type
- pools exist and that all rule dependencies can be resolved on
- the given type of wide IP. If a pool name that corresponds to a CNAME
- type pool is in the specified wideip_pools list, a CNAME type wide IP
- will be created as well and the specified CNAME pool will be added to all
- three wide IPs, type A, AAAA, and CNAME.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9151,10 +7877,8 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="delete_wideip">
 	<documentation>
- Deletes the specified wide IPs.
-
- Deprecated behavior: This method will delete all wide IPs of the specified
- names and matching types A, AAAA, or CNAME.
+ Deletes the specified wide IPs. 
+  
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9175,9 +7899,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="delete_all_wideips">
 	<documentation>
  Deletes all wide IPs.
-
- Deprecated behavior: This method will delete all wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9199,9 +7921,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the states indicating whether to maintain a connection between an LDNS and
  a particular virtual server.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9223,13 +7943,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the states indicating whether to maintain a connection between an LDNS and
  a particular virtual server.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9249,11 +7963,9 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="set_persistence_ttl">
 	<documentation>
- Sets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate
+ Sets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate 
  the time to maintain a connection between an LDNS and a particular virtual server.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9273,15 +7985,9 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="get_persistence_ttl">
 	<documentation>
- Gets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate
+ Gets the persistence TTL values of the specified wide IPs.  These values (in seconds) indicate 
  the time to maintain a connection between an LDNS and a particular virtual server.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9302,9 +8008,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_enabled_state">
 	<documentation>
  Sets the enabled states for the specified wide IPs.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9325,13 +8029,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_enabled_state">
 	<documentation>
  Gets the enabled states for the specified wide IPs.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9358,11 +8056,6 @@ All other trademarks mentioned in this document are the property of their respec
  faster to IPv6 requests for which it does not have AAAA
  records configured. The default is disabled.
 
- Deprecated behavior: This field will be set only on specified wide IPs matching
- type AAAA. If no wide IP of this name exists, it will be an error; otherwise
- if the specified wide IP name does exist but is of a different type (A or
- CNAME), no change is made.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -9384,12 +8077,6 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the state indicating whether the system should return a
  NoError response to IPv6 wide IP requests.
 
- Deprecated behavior: This method returns the field from the wide IP matching
- the specified name and of type AAAA. In that case that the specified wide IP
- of type AAAA does not exist, but other types (CNAME or A) do exist, then the
- default is value 'STATE_DISABLED' is returned. If no wide IP of the specified
- name exists in any type A, AAAA, or CNAME, this method produces an error.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -9408,15 +8095,10 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="set_ipv6_no_error_negative_ttl">
 	<documentation>
- Sets the NoError negative caching TTL values of the specified wide IPs.
+ Sets the NoError negative caching TTL values of the specified wide IPs. 
  These values (in seconds) indicate the time to maintain the negative answer
  by a downstream DNS cache.
-
- Deprecated behavior: This field will be set only on specified wide IPs matching
- type AAAA. If no wide IP of this name exists, it will be an error; otherwise
- if the specified wide IP name does exist but is of a different type (A or
- CNAME), no change is made.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -9435,13 +8117,7 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="get_ipv6_no_error_negative_ttl">
 	<documentation>
- Gets the NoError negative caching TTL values of the specified wide IPs.
-
- Deprecated behavior: This method returns the field from the wide IP matching
- the specified name and of type AAAA. In that case that the specified wide IP
- of type AAAA does not exist, but other types (CNAME or A) do exist, then the
- default is value '0' is returned. If no wide IP of the specified name exists
- in any type A, AAAA, or CNAME, this method produces an error.
+ Gets the NoError negative caching TTL values of the specified wide IPs. 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9461,11 +8137,9 @@ All other trademarks mentioned in this document are the property of their respec
 
 	<operation name="set_lb_method">
 	<documentation>
- Sets the load balancing methods for the specified wide IPs.  This is used by the
+ Sets the load balancing methods for the specified wide IPs.  This is used by the 
  wide IPs when picking a pool to use when responding to a DNS request.
-
- Deprecated behavior: This field will be set on all specified wide IPs matching
- types A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9486,13 +8160,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_lb_method">
 	<documentation>
  Gets the load balancing methods for the specified wide IPs.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9513,11 +8181,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_application">
 	<documentation>
  Sets the names of the applications for the specified wide IPs.
-
- Deprecated behavior: This method will add each specified wide IP
- matching types A or AAAA to the specified application. If no wide IP
- with the specified name and matching type A or AAAA exists, it is an
- error.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9540,12 +8204,7 @@ All other trademarks mentioned in this document are the property of their respec
  Resets the names of the applications for the specified wide
  IPs (i.e., sets them to nothing).  This function
  disassociates each wide IP given from any application.
-
- Deprecated behavior: This method will remove each specified wide IP
- matching types A or AAAA from the specified application. If no wide IP
- with the specified name and matching type A or AAAA exists, it is an
- error.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -9565,11 +8224,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_application">
 	<documentation>
  Gets the names of the applications for the specified wide IPs.
-
- Deprecated behavior: This method returns a list of unique application
- names. Therefore if there is more than one wide IP of the specified
- wide IP name (but of different types A or AAAA) associated with an
- application, only one of these applications is reported.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9590,15 +8245,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_last_resort_pool">
 	<documentation>
  Sets the names of the last resort pools for the specified wide IPs.
-
- Deprecated behavior: This method will attempt to add a last resort pool
- on each of the wide IPs of the specified name and matching the type A,
- AAAA, or CNAME. First we will attempt to add a last resort pool of the
- type matching the wide IP's type. If the matching type pool does not exist,
- we will attempt to add a CNAME type pool of the specified name to the A
- and AAAA wide IP. If it is not possible to add at least one last resort
- pool of the specified name to the specified wide IP of any type, an error
- will occur.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9619,13 +8266,263 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_last_resort_pool">
 	<documentation>
  Gets the names of the last resort pools for the specified wide IPs.
+ 
 
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="get_wideip">
+	<documentation>
+ Gets the lists of wide IPs associated with the specified aliases.
+ Each alias maps to exactly one wide IP.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="get_alias">
+	<documentation>
+ Gets the lists of aliases the specified wide IPs are associated with.
+ A given wide IP can have more than one alias.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="add_alias">
+	<documentation>
+ Adds/associates aliases to the specified wide IPs.
+ A given wide IP can have more than one alias.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="remove_alias">
+	<documentation>
+ Removes aliases from the specified wide IPs.
+ A given wide IP can have more than one alias.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="remove_all_aliases">
+	<documentation>
+ Removes all aliases from the specified wide IPs.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="get_wideip_pool">
+	<documentation>
+ Gets the lists of wide IP pools the specified wide IPs are associated with.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="add_wideip_pool">
+	<documentation>
+ Adds/associates wide IP pools to the specified wide IPs.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="remove_wideip_pool">
+	<documentation>
+ Removes wide IP pools from the specified wide IPs.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="remove_all_wideip_pools">
+	<documentation>
+ Removes all wide IP pools from the specified wide IPs.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="get_wideip_rule">
+	<documentation>
+ Gets the lists of wide IP rules the specified wide IPs are associated with.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="add_wideip_rule">
+	<documentation>
+ Adds/associates wide IP rules to the specified wide IPs.
+
+
+        	</documentation>
+		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
+		<input>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</input>
+		<output>
+			<soap:body
+				use="encoded"
+				namespace="urn:iControl:GlobalLB/WideIP"
+				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+		</output>
+	</operation>
+
+	<operation name="remove_wideip_rule">
+	<documentation>
+ Removes wide IP rules from the specified wide IPs.
+
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -9649,9 +8546,6 @@ All other trademarks mentioned in this document are the property of their respec
 
  This is an arbitrary field which can be used for any purpose.
 
- Deprecated behavior: This field will be set on all specified wide IPs
- matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -9671,322 +8565,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_description">
 	<documentation>
  Gets the descriptions for a set of wide IPs.
-
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_wideip">
-	<documentation>
- Gets the lists of wide IPs associated with the specified aliases.
- Each alias maps to exactly one wide IP.
-
- Deprecated behavior: This method returns a list of unique wide IP names.
- Therefore if there is more than one wide IP of the same name (but of
- different types A, AAAA, or CNAME), associated with the specified alias
- name, only one of these duplicate wide IPs is reported.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_alias">
-	<documentation>
- Gets the lists of aliases the specified wide IPs are associated with.
- A given wide IP can have more than one alias.
-
- Deprecated behavior: This method returns a list of unique aliases. Therefore
- if there is more than one alias of the same name on the specified wide IP of
- given name (but of different types A, AAAA, or CNAME), only one of these
- duplicate aliases is reported.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="add_alias">
-	<documentation>
- Adds/associates aliases to the specified wide IPs.
- A given wide IP can have more than one alias.
-
- Deprecated behavior: This method adds each specified alias to each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="remove_alias">
-	<documentation>
- Removes aliases from the specified wide IPs.
- A given wide IP can have more than one alias.
-
- Deprecated behavior: This method removes the specified aliases from each
- of the wide IPs of the specified name and matching the type A, AAAA, or
- CNAME.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="remove_all_aliases">
-	<documentation>
- Removes all aliases from the specified wide IPs.
-
- Deprecated behavior: This method removes all aliases from each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_wideip_pool">
-	<documentation>
- Gets the lists of wide IP pools the specified wide IPs are associated with.
-
- Deprecated behavior: This method returns a list of unique pools. Therefore
- if there is more than one pool of the same name on the specified wide IP of
- given name (but of different types A, AAAA, or CNAME), only one of these
- duplicate pools is reported.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="add_wideip_pool">
-	<documentation>
- Adds/associates wide IP pools to the specified wide IPs.
-
- Deprecated behavior: This method adds each specified pool to each of the
- wide IPs of the specified name, if the given pool exists with a type of A,
- AAAA, or CNAME and matches the given wide IP type. Note that CNAME pools
- will also be added to any specified wide IP of type A or AAAA.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="remove_wideip_pool">
-	<documentation>
- Removes wide IP pools from the specified wide IPs.
-
- Deprecated behavior: This method removes the specified pools from each
- of the wide IPs of the specified name and matching the type A, AAAA, or
- CNAME. Note that CNAME pools of the specified name on A or AAAA pools
- will also be removed.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="remove_all_wideip_pools">
-	<documentation>
- Removes all wide IP pools from the specified wide IPs.
-
- Deprecated behavior: This method removes all pools from each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_wideip_rule">
-	<documentation>
- Gets the lists of wide IP rules the specified wide IPs are associated with.
-
- Deprecated behavior: This method returns a list of unique rules. Therefore
- if there is more than one rule of the same name on the specified wide IP of
- given name (but of different types A, AAAA, or CNAME), only one of these
- duplicate rules is reported.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="add_wideip_rule">
-	<documentation>
- Adds/associates wide IP rules to the specified wide IPs.
-
- Deprecated behavior: This method adds each specified rule to each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
-
- *IMPORTANT*
-
- Please note that adding rules to a wide IP which reference objects like
- pools may result in an error.
-
- For example, a rule references a pool name and this pool only exists in the
- configuration as a pool of the given name and type A. If the user attempts
- to add this rule to a given wide IP, and that wide IP exists as both a type
- A wide IP and a type AAAA wide IP (of the same, specified name), it will
- result in a failure. This is because the type AAAA wide IP will interpret
- the rule's pool reference as a reference to a pool with the given name and
- type AAAA (the type of the wide IP the rule is on). Since a pool of the
- specified name and type AAAA does not exist, it fails. Therefore, it is highly
- recommended to use the WideIPV2::add_wide_ip_rule method, so the user can
- specify explicitly which wide IP, using both name and type, to add the rule to.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:GlobalLB/WideIP"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="remove_wideip_rule">
-	<documentation>
- Removes wide IP rules from the specified wide IPs.
-
- Deprecated behavior: This method removes the specified rules from each
- of the wide IPs of the specified name and matching the type A, AAAA, or CNAME.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10008,8 +8586,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Removes all wide IP rules from the specified wide IPs.
 
- Deprecated behavior: This method removes all rules from each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10030,9 +8606,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_statistics">
 	<documentation>
  Resets the statistics for the specified wide IPs.
-
- Deprecated behavior: This method will clear all statistics on each of the
- wide IPs of the specified name and matching the type A, AAAA, or CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10053,10 +8627,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_statistics">
 	<documentation>
  Gets the statistics for all the wide IPs.
-
- Deprecated behavior: A given statistics entry returned from this method
- represents a sum of each of the individual statistics on wide IPs of the
- specified same name and types A, AAAA, and CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10077,10 +8648,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_statistics">
 	<documentation>
  Gets the statistics for the specified wide IPs.
-
- Deprecated behavior: A given statistics entry returned from this method
- represents a sum of each of the individual statistics on wide IPs of the
- specified same name and types A, AAAA, and CNAME.
+ 
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10110,11 +8678,6 @@ All other trademarks mentioned in this document are the property of their respec
  In addition to name/value pair, metadata also has a persistence
  attribute. See Common::MetadataPersistence for its definition.
 
- Deprecated behavior: This method returns a list of unique metadata
- objects. Therefore if there is more than one metadata of the same
- name on the specified wide IP name (but of different type A, AAAA,
- or CNAME), only one of these duplicate metadata objects is reported.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10136,9 +8699,6 @@ All other trademarks mentioned in this document are the property of their respec
  Adds the metadata for the specified wide IPs.
  For definition of the metadata, refer to the get_metadata method
  description.
-
- Deprecated behavior: This method adds the specified metadata
- on the specified wide IPs matching types A, AAAA, or CNAME.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10162,9 +8722,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This method removes the specified metadata
- from all specified wide IPs matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10184,9 +8741,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="remove_all_metadata">
 	<documentation>
  Removes all the metadata instances for the specified wide IPs.
-
- Deprecated behavior: This method removes all metadata from all specified
- wide IPs matching types A, AAAA, or CNAME.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10210,9 +8764,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This field will be set on all specified wide IP
- metadatas matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10234,15 +8785,6 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the metadata values for the specified metadata.
  For definition of the metadata, refer to the get_metadata method
  description.
-
- Deprecated behavior: This method returns the field from a wide IP
- metadata matching the specified name. The field will be returned from
- a type A wide IP metadata of the specified name, unless that does not
- exist. In that case then the field from the type AAAA wide IP
- metadata is used and if that also does not exist, finally the field
- from the type CNAME wide IP metadata is used. If the CNAME type
- wide IP metadata of the specified name also does not exist, this
- method produces an error.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10266,9 +8808,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This field will be set on all specified wide IP
- metadatas matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10290,15 +8829,6 @@ All other trademarks mentioned in this document are the property of their respec
  Gets the metadata descriptions for the specified metadata.
  For definition of the metadata, refer to the get_metadata method
  description.
-
- Deprecated behavior: This method returns the field from a wide IP
- metadata matching the specified name. The field will be returned from
- a type A wide IP metadata of the specified name, unless that does not
- exist. In that case then the field from the type AAAA wide IP
- metadata is used and if that also does not exist, finally the field
- from the type CNAME wide IP metadata is used. If the CNAME type
- wide IP metadata of the specified name also does not exist, this
- method produces an error.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10322,9 +8852,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This field will be set on all specified wide IP
- metadatas matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10347,15 +8874,6 @@ All other trademarks mentioned in this document are the property of their respec
  For definition of the metadata, refer to the get_metadata method
  description.
 
- Deprecated behavior: This method returns the field from a wide IP
- metadata matching the specified name. The field will be returned from
- a type A wide IP metadata of the specified name, unless that does not
- exist. In that case then the field from the type AAAA wide IP
- metadata is used and if that also does not exist, finally the field
- from the type CNAME wide IP metadata is used. If the CNAME type
- wide IP metadata of the specified name also does not exist, this
- method produces an error.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10377,9 +8895,6 @@ All other trademarks mentioned in this document are the property of their respec
  Sets the load balancing log verbosity for the specified wide IPs.
  The log reveals the reason why GTM makes a load-balancing decision.
 
- Deprecated behavior: This field will be set on all specified wide IPs
- matching types A, AAAA, or CNAME.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10400,13 +8915,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the load balancing log verbosity for the specified wide IPs.
 
- Deprecated behavior: This method returns the field from a wide IP matching
- the specified name. The field will be returned from a type A wide IP of the
- specified name, unless that does not exist. In that case then the field from
- the type AAAA wide IP is used and if that also does not exist, finally the
- field from the type CNAME wide IP is used. If the CNAME type wide IP of the
- specified name also does not exist, this method produces an error.
-
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
 		<input>
@@ -10426,6 +8934,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_version">
 	<documentation>
  Gets the version information for this interface.
+
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:GlobalLB/WideIP"/>
@@ -10448,15 +8957,9 @@ All other trademarks mentioned in this document are the property of their respec
 
 <service name="GlobalLB.WideIP">
 	<documentation>
- *IMPORTANT*  Due to changing wide IP key definitions (wide IPs are now identified by a name
- and a query type), this full interface is deprecated as of BIG-IP_v12.0.0. Please use the
- GlobalLB::WideIPV2 interface to work with wide IPs; continuing to use the deprecated
- GlobalLB::WideIP interface against BIG-IP_v12.0.0 or later versions can result in unintended
- configurations and behavior.
-
- The WideIP interface enables you to work with wide IPs, as well as with the pools and the virtual servers
- that make them up.  For example, use the WideIP interface to get a list of wide IPs, to add a wide IP, or
- to remove a wide IP.
+ The WideIP interface enables you to work with wide IPs, as well as with the pools and the virtual servers 
+ that make them up.  For example, use the WideIP interface to get a list of wide IPs, to add a wide IP, or 
+ to remove a wide IP.  
 
         	</documentation>
 	<port name="GlobalLB.WideIPPort" binding="tns:GlobalLB.WideIPBinding">

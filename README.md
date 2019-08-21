@@ -15,6 +15,8 @@ I originally set out to improve the official one:
 
 But given the original one was pretty bare-bones, I started over. 
 
+This fork of the original source is to package up the WSDL files from BIG-IP_v11.5.3, rather than the newer ones that contained inside upstream.
+
 ## Installation
 
 Add this line to your application's Gemfile:

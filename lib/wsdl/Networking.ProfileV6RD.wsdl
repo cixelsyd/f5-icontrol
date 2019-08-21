@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!--
-Copyright (c) 1996-2016, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
+Copyright (c) 1996-2015, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
 
 F5, F5 Networks, the F5 logo, BIG-IP, 3-DNS, iControl, GLOBAL-SITE, SEE-IT, EDGE-FX, FireGuard, Internet Control Architecture, IP Application Switch, iRules, PACKET VELOCITY, SYN Check, CONTROL YOUR WORLD, OneConnect, ZoneRunner, uRoam, FirePass, and TrafficShield are registered trademarks or trademarks of F5 Networks, Inc., in the U.S. and certain other countries. 
 
@@ -191,22 +191,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<part name="return" type="tns:Common.ProfileULongSequence"/>
 </message>
 
-<message name="Networking.ProfileV6RD.set_v4_prefix_and_lengthRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="prefixes" type="tns:Common.ProfileIPAddressSequence"/>
-	<part name="lengths" type="tns:Common.ProfileULongSequence"/>
-</message>
-<message name="Networking.ProfileV6RD.set_v4_prefix_and_lengthResponse">
-</message>
-
-<message name="Networking.ProfileV6RD.set_v6_prefix_and_lengthRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="prefixes" type="tns:Common.ProfileIPAddressSequence"/>
-	<part name="lengths" type="tns:Common.ProfileULongSequence"/>
-</message>
-<message name="Networking.ProfileV6RD.set_v6_prefix_and_lengthResponse">
-</message>
-
 <message name="Networking.ProfileV6RD.get_versionRequest">
 </message>
 <message name="Networking.ProfileV6RD.get_versionResponse">
@@ -374,22 +358,6 @@ All other trademarks mentioned in this document are the property of their respec
         	</documentation>
 		<input message="tns:Networking.ProfileV6RD.get_v6_prefix_lengthRequest"/>
 		<output message="tns:Networking.ProfileV6RD.get_v6_prefix_lengthResponse"/>
-	</operation>
-	<operation name="set_v4_prefix_and_length">
-	<documentation>
- Sets both the IPv4 address prefixes and lengths of 6RD tunnel profiles.
-
-        	</documentation>
-		<input message="tns:Networking.ProfileV6RD.set_v4_prefix_and_lengthRequest"/>
-		<output message="tns:Networking.ProfileV6RD.set_v4_prefix_and_lengthResponse"/>
-	</operation>
-	<operation name="set_v6_prefix_and_length">
-	<documentation>
- Sets both the IPv6 address prefixes and lengths of 6RD tunnel profiles.
-
-        	</documentation>
-		<input message="tns:Networking.ProfileV6RD.set_v6_prefix_and_lengthRequest"/>
-		<output message="tns:Networking.ProfileV6RD.set_v6_prefix_and_lengthResponse"/>
 	</operation>
 	<operation name="get_version">
 	<documentation>
@@ -763,46 +731,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_v6_prefix_length">
 	<documentation>
  Gets the 6RD prefix lengths for 6RD tunnel profiles.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Networking/ProfileV6RD"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Networking/ProfileV6RD"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Networking/ProfileV6RD"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_v4_prefix_and_length">
-	<documentation>
- Sets both the IPv4 address prefixes and lengths of 6RD tunnel profiles.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:Networking/ProfileV6RD"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Networking/ProfileV6RD"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:Networking/ProfileV6RD"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_v6_prefix_and_length">
-	<documentation>
- Sets both the IPv6 address prefixes and lengths of 6RD tunnel profiles.
 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:Networking/ProfileV6RD"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!--
-Copyright (c) 1996-2016, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
+Copyright (c) 1996-2015, F5 Networks, Inc., Seattle, Washington. All rights reserved.  
 
 F5, F5 Networks, the F5 logo, BIG-IP, 3-DNS, iControl, GLOBAL-SITE, SEE-IT, EDGE-FX, FireGuard, Internet Control Architecture, IP Application Switch, iRules, PACKET VELOCITY, SYN Check, CONTROL YOUR WORLD, OneConnect, ZoneRunner, uRoam, FirePass, and TrafficShield are registered trademarks or trademarks of F5 Networks, Inc., in the U.S. and certain other countries. 
 
@@ -28,25 +28,6 @@ All other trademarks mentioned in this document are the property of their respec
 				</xsd:restriction>
 			</xsd:complexContent>
 		</xsd:complexType>
-		<xsd:complexType name="LocalLB.ProfileOneConnect.ProfileLimitTypeSequence">
-			<xsd:complexContent>
-				<xsd:restriction base='SOAP-ENC:Array'>
-					<xsd:attribute ref='SOAP-ENC:arrayType' wsdl:arrayType='tns:LocalLB.ProfileOneConnect.ProfileLimitType[]'/>
-				</xsd:restriction>
-			</xsd:complexContent>
-		</xsd:complexType>
-		<xsd:complexType name="LocalLB.ProfileEnabledState">
-			<xsd:sequence>
-				<xsd:element name="value" type="tns:Common.EnabledState"/>
-				<xsd:element name="default_flag" type="xsd:boolean"/>
-			</xsd:sequence>
-		</xsd:complexType>
-		<xsd:complexType name="LocalLB.ProfileOneConnect.ProfileLimitType">
-			<xsd:sequence>
-				<xsd:element name="value" type="tns:LocalLB.ProfileOneConnect.LimitType"/>
-				<xsd:element name="default_flag" type="xsd:boolean"/>
-			</xsd:sequence>
-		</xsd:complexType>
 		<xsd:complexType name="LocalLB.ProfileIPAddressSequence">
 			<xsd:complexContent>
 				<xsd:restriction base='SOAP-ENC:Array'>
@@ -73,20 +54,6 @@ All other trademarks mentioned in this document are the property of their respec
 				<xsd:element name="low" type="xsd:long"/>
 			</xsd:sequence>
 		</xsd:complexType>
-		<xsd:simpleType name="Common.EnabledState">
-			<xsd:restriction base="xsd:string">
-				<xsd:enumeration value="STATE_DISABLED">
-					<xsd:annotation>
-						<xsd:documentation>STATE_DISABLED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATE_ENABLED">
-					<xsd:annotation>
-						<xsd:documentation>STATE_ENABLED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-			</xsd:restriction>
-		</xsd:simpleType>
 		<xsd:complexType name="Common.TimeStamp">
 			<xsd:sequence>
 				<xsd:element name="year" type="xsd:long"/>
@@ -110,30 +77,6 @@ All other trademarks mentioned in this document are the property of their respec
 				<xsd:element name="time_stamp" type="tns:Common.TimeStamp"/>
 			</xsd:sequence>
 		</xsd:complexType>
-		<xsd:simpleType name="LocalLB.ProfileOneConnect.LimitType">
-			<xsd:restriction base="xsd:string">
-				<xsd:enumeration value="ONECONNECT_LIMIT_TYPE_UNKNOWN">
-					<xsd:annotation>
-						<xsd:documentation>ONECONNECT_LIMIT_TYPE_UNKNOWN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="ONECONNECT_LIMIT_TYPE_NONE">
-					<xsd:annotation>
-						<xsd:documentation>ONECONNECT_LIMIT_TYPE_NONE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="ONECONNECT_LIMIT_TYPE_IDLE">
-					<xsd:annotation>
-						<xsd:documentation>ONECONNECT_LIMIT_TYPE_IDLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="ONECONNECT_LIMIT_TYPE_STRICT">
-					<xsd:annotation>
-						<xsd:documentation>ONECONNECT_LIMIT_TYPE_STRICT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-			</xsd:restriction>
-		</xsd:simpleType>
 		<xsd:complexType name="LocalLB.ProfileOneConnect.ProfileOneConnectStatisticEntry">
 			<xsd:sequence>
 				<xsd:element name="profile_name" type="xsd:string"/>
@@ -4314,11 +4257,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>STATISTIC_DNS_CACHE_RESOLVER_SEC_SECURE</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_CACHE_RESOLVER_RPZ_REWRITES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_CACHE_RESOLVER_RPZ_REWRITES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 				<xsd:enumeration value="STATISTIC_DNS_REQUESTS_TO_CACHE">
 					<xsd:annotation>
 						<xsd:documentation>STATISTIC_DNS_REQUESTS_TO_CACHE</xsd:documentation>
@@ -4687,11 +4625,6 @@ All other trademarks mentioned in this document are the property of their respec
 				<xsd:enumeration value="STATISTIC_DNS_OP_UPDATE">
 					<xsd:annotation>
 						<xsd:documentation>STATISTIC_DNS_OP_UPDATE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_OP_OTHER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_OP_OTHER</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
 				<xsd:enumeration value="STATISTIC_DNS_ZONE_IXFR">
@@ -6679,1021 +6612,6 @@ All other trademarks mentioned in this document are the property of their respec
 						<xsd:documentation>STATISTIC_SSL_COMMON_FWDP_HOSTNAME_BYPASSES</xsd:documentation>
 					</xsd:annotation>
 				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_TOTAL_END_POINTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_TOTAL_END_POINTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_REQUESTS_GTM_REWRITES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_REQUESTS_GTM_REWRITES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_ACCEPTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_ACCEPTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_CURRENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_CURRENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_MAXIMUM">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_MAXIMUM</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_BLOCKED_COMMANDS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_BLOCKED_COMMANDS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_CONNECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_CONNECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_CURRENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_CURRENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_MAXIMUM">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_MAXIMUM</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_FAILED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_FAILED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_RENEGOTIATIONS_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_RENEGOTIATIONS_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FASTL4_LATE_BINDING_SUCCESSFUL_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FASTL4_LATE_BINDING_SUCCESSFUL_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FASTL4_LATE_BINDING_TIMED_OUT_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FASTL4_LATE_BINDING_TIMED_OUT_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_CONNECTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_CONNECTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_STATUS_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_STATUS_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_VALIDATION_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_RESPONSE_VALIDATION_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_CERTIFICATE_STATUS_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_CERTIFICATE_STATUS_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_HTTP_ERRORS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_HTTP_ERRORS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_TIMEOUTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_TIMEOUTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_OCSP_STAPLING_OCSP_CONNECTION_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_PORT_BLOCKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_PORT_BLOCKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_CLIENTS_REACHED_LIMIT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_CLIENTS_REACHED_LIMIT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_ACTIVE_ZOMBIE_PORT_BLOCKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_ACTIVE_ZOMBIE_PORT_BLOCKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_CLIENTS_REACHED_LIMIT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_CLIENTS_REACHED_LIMIT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATION_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_ALLOCATION_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_DEALLOCATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_PORT_BLOCK_DEALLOCATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_CREATED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_CREATED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_DELETED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCKS_DELETED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCK_CONNECTIONS_KILLED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_LSN_POOL_PBA_TOTAL_ZOMBIE_PORT_BLOCK_CONNECTIONS_KILLED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_QUERIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_QUERIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_ALLOWED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_ALLOWED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_DROPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_DROPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_TRUNCATED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_TRUNCATED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_NXDOMAIN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_NXDOMAIN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_NOERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_NOERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_RAPID_RESPONSE_REFUSED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_RAPID_RESPONSE_REFUSED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_IN_RESUBMITTED_FOR_RETRY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_IN_RESUBMITTED_FOR_RETRY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_AND_NOT_DELIVERABLE_TO_ORIGINATOR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_AND_NOT_DELIVERABLE_TO_ORIGINATOR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_ROUTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_ROUTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_UNROUTABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_UNROUTABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_A_FULL_QUEUE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_A_FULL_QUEUE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_CLOSED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_CONNECTION_CLOSED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_AN_INTERNAL_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_AN_INTERNAL_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_FAILED_DUE_TO_PERSIST_KEY_IN_USE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_FAILED_DUE_TO_PERSIST_KEY_IN_USE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BADMSGS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BADMSGS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_DROPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_DROPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INVITE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INVITE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ACK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ACK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_OPTIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_OPTIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BYE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BYE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CANCEL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CANCEL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REGISTER_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REGISTER_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PUBLISH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PUBLISH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOTIFY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOTIFY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SUBSCRIBE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SUBSCRIBE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MESSAGE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MESSAGE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PRACK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PRACK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_OTHER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_OTHER</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_PROVISIONAL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_PROVISIONAL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SUCCESSFUL">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SUCCESSFUL</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REDIRECTION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REDIRECTION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CLIENT_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CLIENT_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_GLOBAL_FAILURES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_GLOBAL_FAILURES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MESSAGE_LIMIT_EXCEEDED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MESSAGE_LIMIT_EXCEEDED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MAX_FORWARDS_CHECK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MAX_FORWARDS_CHECK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BAD_REQUEST">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BAD_REQUEST</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_FOUND">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_FOUND</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TRANSACTION_DOES_NOT_EXIST">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TRANSACTION_DOES_NOT_EXIST</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TOO_MANY_HOPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TOO_MANY_HOPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNKNOWN_PARSE_ERROR">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNKNOWN_PARSE_ERROR</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CONTENT_LENGTH_MISMATCH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CONTENT_LENGTH_MISMATCH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_EXTRANEOUS_HEADER_FIELD">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_EXTRANEOUS_HEADER_FIELD</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INVALID_CONTENT_LENGTH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INVALID_CONTENT_LENGTH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQ_FIELD_OVERLARGE_VALUES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQ_FIELD_OVERLARGE_VALUES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_RESP_FIELD_OVERLARGE_VALUES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_RESP_FIELD_OVERLARGE_VALUES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNTERMINATED_QUOTED_STRING">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNTERMINATED_QUOTED_STRING</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_MALFORMED_REQUEST_URI">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_MALFORMED_REQUEST_URI</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNKNOWN_PROTOCOL_VERSION">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNKNOWN_PROTOCOL_VERSION</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_CSEQ_METHOD_MISMATCH">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_CSEQ_METHOD_MISMATCH</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_BYTES_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_BYTES_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_BYTES_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_BYTES_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_CLIENT_PACKETS_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_CLIENT_PACKETS_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_BYTES_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_BYTES_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_BYTES_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_BYTES_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CRYPTO_SERVER_PACKETS_OUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CRYPTO_SERVER_PACKETS_OUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_EVICTION_POLICY_EVICTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_EVICTION_POLICY_EVICTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CONNECTION_FLOW_MISS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CONNECTION_FLOW_MISS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_SYNCOOKIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_SYNCOOKIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_REJECTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_REJECTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_HW_SYNCOOKIES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_HW_SYNCOOKIES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_HW_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_HW_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_HITS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_HITS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_ACCEPTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_ACCEPTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SYNCOOKIE_STATS_WL_REJECTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SYNCOOKIE_STATS_WL_REJECTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FW_RULE_LAST_HIT_TIME">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FW_RULE_LAST_HIT_TIME</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_ASSOCIATIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_ASSOCIATIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_CLOSING">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_CLOSING</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_CONFIRMED_ADDRESSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_CONFIRMED_ADDRESSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_UNCONFIRMED_ADDRESSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_UNCONFIRMED_ADDRESSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_ACTIVE_PATHS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_ACTIVE_PATHS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SCTP_INACTIVE_PATHS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SCTP_INACTIVE_PATHS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_CLIENTLDAP_CONNECTIONS_TLS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_CLIENTLDAP_CONNECTIONS_TLS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SERVERLDAP_CONNECTIONS_TLS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SERVERLDAP_CONNECTIONS_TLS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_AGGREGATE_RENEGOTIATIONS_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_AGGREGATE_RENEGOTIATIONS_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FTP_FTPS_SESSIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FTP_FTPS_SESSIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_READ_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_READ_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_WRITE_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_WRITE_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_FTP_PASSTHRU_TRANSITIONS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_FTP_PASSTHRU_TRANSITIONS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_TFTP_DISCARDED_REQUESTS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_TFTP_DISCARDED_REQUESTS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_INSPECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_INSPECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_MALFORMED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_MALFORMED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_CACHE_LOOKUPS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_CACHE_LOOKUPS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_HW_CACHE_RESPONSES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_HW_CACHE_RESPONSES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_VCMP_RED_PACKETS_IN">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_VCMP_RED_PACKETS_IN</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_SESSION_MIRRORING_SUCCESS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_SESSION_MIRRORING_SUCCESS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_SESSION_MIRRORING_FAILURE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_SESSION_MIRRORING_FAILURE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_PEER_READY">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_PEER_READY</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_RECV">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_CTX_RECV</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_HS_SUCCESS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_HS_SUCCESS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_FAILURE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_FAILURE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CONNECTION_MIRRORING_HA_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_DTLS_TX_PUSHBACKS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_DTLS_TX_PUSHBACKS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_CIPHER_CAMELLIA_BULK">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_CIPHER_CAMELLIA_BULK</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_DNS_NAPTR_REQS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_DNS_NAPTR_REQS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_TRANSMITTED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_TRANSMITTED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_RECEIVED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_RECEIVED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_RPF">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_RPF</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_WRONG_INTERFACE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_WRONG_INTERFACE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_NO_ROUTE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_NO_ROUTE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_ROUTES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IP_MULTICAST_DROPPED_MAX_PENDING_ROUTES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_TRANSMITTED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_TRANSMITTED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_RECEIVED_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_RECEIVED_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_RPF">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_RPF</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_WRONG_INTERFACE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_WRONG_INTERFACE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_NO_ROUTE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_NO_ROUTE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_ROUTE_LOOKUP_TIMEOUT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_PACKETS">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_PACKETS</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_ROUTES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_IPV6_MULTICAST_DROPPED_MAX_PENDING_ROUTES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_ACTIVE_HANDSHAKES_REJECTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_ACTIVE_HANDSHAKES_REJECTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_COMMON_CURRENT_ACTIVE_HANDSHAKES">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_COMMON_CURRENT_ACTIVE_HANDSHAKES</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_1K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_1K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_2K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_2K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_3K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_3K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_4K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_4K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_5K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_5K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_6K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_6K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_7K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_7K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_8K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_8K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_9K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_9K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_10K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_10K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_11K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_11K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_12K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_12K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_13K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_13K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_14K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_14K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_15K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_15K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SSL_DYNAMIC_RECORD_16K">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SSL_DYNAMIC_RECORD_16K</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPROUTER_STANDBY_DROPPED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPROUTER_STANDBY_DROPPED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE_413_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REQUEST_ENTITY_TOO_LARGE_413_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME_416_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UNSUPPORTED_URI_SCHEME_416_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE_480_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TEMPORARILY_UNAVAILABLE_480_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_LOOP_DETECTED_482_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_LOOP_DETECTED_482_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_TOO_MANY_HOPS_483_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_TOO_MANY_HOPS_483_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE_484_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_ADDRESS_INCOMPLETE_484_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE_488_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_ACCEPTABLE_HERE_488_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR_500_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVER_INTERNAL_ERROR_500_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_IMPLEMENTED">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_IMPLEMENTED</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_IMPLEMENTED_501_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_IMPLEMENTED_501_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE_503_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_SERVICE_UNAVAILABLE_503_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED_505_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_VERSION_NOT_SUPPORTED_505_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BADMSGS_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BADMSGS_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_DROPS_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_DROPS_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_INFO">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_INFO</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_REFER">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_REFER</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_UPDATE_REQ">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_UPDATE_REQ</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_BAD_REQUEST_400_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_BAD_REQUEST_400_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
-				<xsd:enumeration value="STATISTIC_SIPSESSION_NOT_FOUND_404_SENT">
-					<xsd:annotation>
-						<xsd:documentation>STATISTIC_SIPSESSION_NOT_FOUND_404_SENT</xsd:documentation>
-					</xsd:annotation>
-				</xsd:enumeration>
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:complexType name="Common.StringSequenceSequence">
@@ -7715,13 +6633,6 @@ All other trademarks mentioned in this document are the property of their respec
 				<xsd:element name="statistics" type="tns:LocalLB.ProfileOneConnect.ProfileOneConnectStatisticEntrySequence"/>
 				<xsd:element name="time_stamp" type="tns:Common.TimeStamp"/>
 			</xsd:sequence>
-		</xsd:complexType>
-		<xsd:complexType name="LocalLB.ProfileEnabledStateSequence">
-			<xsd:complexContent>
-				<xsd:restriction base='SOAP-ENC:Array'>
-					<xsd:attribute ref='SOAP-ENC:arrayType' wsdl:arrayType='tns:LocalLB.ProfileEnabledState[]'/>
-				</xsd:restriction>
-			</xsd:complexContent>
 		</xsd:complexType>
 		<xsd:complexType name="Common.Statistic">
 			<xsd:sequence>
@@ -7856,34 +6767,6 @@ All other trademarks mentioned in this document are the property of their respec
 	<part name="return" type="tns:LocalLB.ProfileULongSequence"/>
 </message>
 
-<message name="LocalLB.ProfileOneConnect.set_share_pools_stateRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="states" type="tns:LocalLB.ProfileEnabledStateSequence"/>
-</message>
-<message name="LocalLB.ProfileOneConnect.set_share_pools_stateResponse">
-</message>
-
-<message name="LocalLB.ProfileOneConnect.get_share_pools_stateRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-</message>
-<message name="LocalLB.ProfileOneConnect.get_share_pools_stateResponse">
-	<part name="return" type="tns:LocalLB.ProfileEnabledStateSequence"/>
-</message>
-
-<message name="LocalLB.ProfileOneConnect.set_limit_typeRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-	<part name="limit_types" type="tns:LocalLB.ProfileOneConnect.ProfileLimitTypeSequence"/>
-</message>
-<message name="LocalLB.ProfileOneConnect.set_limit_typeResponse">
-</message>
-
-<message name="LocalLB.ProfileOneConnect.get_limit_typeRequest">
-	<part name="profile_names" type="tns:Common.StringSequence"/>
-</message>
-<message name="LocalLB.ProfileOneConnect.get_limit_typeResponse">
-	<part name="return" type="tns:LocalLB.ProfileOneConnect.ProfileLimitTypeSequence"/>
-</message>
-
 <message name="LocalLB.ProfileOneConnect.set_descriptionRequest">
 	<part name="profile_names" type="tns:Common.StringSequence"/>
 	<part name="descriptions" type="tns:Common.StringSequence"/>
@@ -7944,7 +6827,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_list">
        	<documentation>
  Gets a list of all OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_listRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_listResponse"/>
@@ -7952,7 +6835,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="create">
 	<documentation>
  Creates the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.createRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.createResponse"/>
@@ -7960,7 +6843,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="delete_profile">
 	<documentation>
  Deletes the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.delete_profileRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.delete_profileResponse"/>
@@ -7968,7 +6851,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="delete_all_profiles">
 	<documentation>
  Deletes all OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.delete_all_profilesRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.delete_all_profilesResponse"/>
@@ -8001,7 +6884,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the names of the default profiles from which the specified profiles will derive
  default values for its attributes.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.set_default_profileRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.set_default_profileResponse"/>
@@ -8010,7 +6893,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the names of the default profiles from which the specified profiles will derive
  default values for its attributes.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_default_profileRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_default_profileResponse"/>
@@ -8018,7 +6901,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_source_mask">
 	<documentation>
  Sets the masks applied to the source addresses to determine eligibility for connection reuse.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.set_source_maskRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.set_source_maskResponse"/>
@@ -8026,7 +6909,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_source_mask">
 	<documentation>
  Gets the masks applied to the source addresses to determine eligibility for connection reuse.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_source_maskRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_source_maskResponse"/>
@@ -8034,7 +6917,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_connection">
 	<documentation>
  Sets the maximum number of connections for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.set_maximum_connectionRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.set_maximum_connectionResponse"/>
@@ -8042,7 +6925,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_connection">
 	<documentation>
  Gets the maximum number of connections for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_maximum_connectionRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_maximum_connectionResponse"/>
@@ -8050,7 +6933,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_age">
 	<documentation>
  Sets the maximum age (in seconds) after which a connection should not be reused.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.set_maximum_ageRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.set_maximum_ageResponse"/>
@@ -8058,7 +6941,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_age">
 	<documentation>
  Gets the maximum age (in seconds) after which a connection should not be reused.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_maximum_ageRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_maximum_ageResponse"/>
@@ -8066,7 +6949,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_reuse">
 	<documentation>
  Sets the maximum times the connections in the pool can be reused.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.set_maximum_reuseRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.set_maximum_reuseResponse"/>
@@ -8074,7 +6957,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_reuse">
 	<documentation>
  Gets the maximum times the connections in the pool can be reused.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_maximum_reuseRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_maximum_reuseResponse"/>
@@ -8082,7 +6965,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_idle_timeout">
 	<documentation>
  Sets the idle timeouts for connections in the specified connection pools.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.set_idle_timeoutRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.set_idle_timeoutResponse"/>
@@ -8090,58 +6973,10 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_idle_timeout">
 	<documentation>
  Gets the idle timeouts for connections in the specified connection pools.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_idle_timeoutRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_idle_timeoutResponse"/>
-	</operation>
-	<operation name="set_share_pools_state">
-	<documentation>
- Sets the share pools flags for OneConnect profiles.
-
- If the share_pools flag is set on a OneConnect profile, hudchains with
- hudnodes related to OneConnect filters that share the same sequence of
- filters from the OneConnect filter to the chain end can be shared in
- a OneConnect pool.
-
-        	</documentation>
-		<input message="tns:LocalLB.ProfileOneConnect.set_share_pools_stateRequest"/>
-		<output message="tns:LocalLB.ProfileOneConnect.set_share_pools_stateResponse"/>
-	</operation>
-	<operation name="get_share_pools_state">
-	<documentation>
- Gets the share pools flags for OneConnect profiles.
-
-        	</documentation>
-		<input message="tns:LocalLB.ProfileOneConnect.get_share_pools_stateRequest"/>
-		<output message="tns:LocalLB.ProfileOneConnect.get_share_pools_stateResponse"/>
-	</operation>
-	<operation name="set_limit_type">
-	<documentation>
- Sets the limit types for OneConnect profiles.
-
- The limit-type can take on one of three values: ONECONNECT_LIMIT_TYPE_NONE (none),
- ONECONNECT_LIMIT_TYPE_IDLE (idle), ONECONNECT_LIMIT_TYPE_STRICT (strict). none:
- behaviour is as before, "connections" are counted toward the pool member
- limit based on whether they have active, in-flight, requests or responses. idle:
- if a client connection is accepted and we are at or above the TCP connection
- limit, a random idle connection will be dropped. strict: a hard TCP pool member
- connection limit is enforced. No attempt will be made to try to find a connection
- to reuse if at the TCP connection limit, EVEN IF ONE MIGHT BE AVAILABLE. This mode
- of operation is not recommended (though some customers find it useful with short
- idle connection timeouts).
-
-        	</documentation>
-		<input message="tns:LocalLB.ProfileOneConnect.set_limit_typeRequest"/>
-		<output message="tns:LocalLB.ProfileOneConnect.set_limit_typeResponse"/>
-	</operation>
-	<operation name="get_limit_type">
-	<documentation>
- Gets the limit types for OneConnect profiles.
-
-        	</documentation>
-		<input message="tns:LocalLB.ProfileOneConnect.get_limit_typeRequest"/>
-		<output message="tns:LocalLB.ProfileOneConnect.get_limit_typeResponse"/>
 	</operation>
 	<operation name="set_description">
 	<documentation>
@@ -8164,7 +6999,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_statistics">
 	<documentation>
  Resets the statistics for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.reset_statisticsRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.reset_statisticsResponse"/>
@@ -8173,7 +7008,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Resets the statistics for the specified profiles, for
  specified virtual servers.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.reset_statistics_by_virtualRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.reset_statistics_by_virtualResponse"/>
@@ -8181,7 +7016,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_statistics">
 	<documentation>
  Gets the statistics for all the OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_all_statisticsRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_all_statisticsResponse"/>
@@ -8189,7 +7024,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_statistics">
 	<documentation>
  Gets the statistics for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_statisticsRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_statisticsResponse"/>
@@ -8197,7 +7032,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_statistics_by_virtual">
 	<documentation>
  Gets the statistics for the specified profiles, by virtual server.
-
+ 
         	</documentation>
 		<input message="tns:LocalLB.ProfileOneConnect.get_statistics_by_virtualRequest"/>
 		<output message="tns:LocalLB.ProfileOneConnect.get_statistics_by_virtualResponse"/>
@@ -8219,7 +7054,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_list">
 	<documentation>
  Gets a list of all OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8239,7 +7074,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="create">
 	<documentation>
  Creates the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8259,7 +7094,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="delete_profile">
 	<documentation>
  Deletes the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8279,7 +7114,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="delete_all_profiles">
 	<documentation>
  Deletes all OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8348,7 +7183,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Sets the names of the default profiles from which the specified profiles will derive
  default values for its attributes.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8369,7 +7204,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Gets the names of the default profiles from which the specified profiles will derive
  default values for its attributes.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8389,7 +7224,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_source_mask">
 	<documentation>
  Sets the masks applied to the source addresses to determine eligibility for connection reuse.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8409,7 +7244,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_source_mask">
 	<documentation>
  Gets the masks applied to the source addresses to determine eligibility for connection reuse.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8429,7 +7264,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_connection">
 	<documentation>
  Sets the maximum number of connections for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8449,7 +7284,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_connection">
 	<documentation>
  Gets the maximum number of connections for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8469,7 +7304,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_age">
 	<documentation>
  Sets the maximum age (in seconds) after which a connection should not be reused.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8489,7 +7324,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_age">
 	<documentation>
  Gets the maximum age (in seconds) after which a connection should not be reused.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8509,7 +7344,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_maximum_reuse">
 	<documentation>
  Sets the maximum times the connections in the pool can be reused.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8529,7 +7364,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_maximum_reuse">
 	<documentation>
  Gets the maximum times the connections in the pool can be reused.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8549,7 +7384,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="set_idle_timeout">
 	<documentation>
  Sets the idle timeouts for connections in the specified connection pools.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8569,103 +7404,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_idle_timeout">
 	<documentation>
  Gets the idle timeouts for connections in the specified connection pools.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_share_pools_state">
-	<documentation>
- Sets the share pools flags for OneConnect profiles.
-
- If the share_pools flag is set on a OneConnect profile, hudchains with
- hudnodes related to OneConnect filters that share the same sequence of
- filters from the OneConnect filter to the chain end can be shared in
- a OneConnect pool.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_share_pools_state">
-	<documentation>
- Gets the share pools flags for OneConnect profiles.
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="set_limit_type">
-	<documentation>
- Sets the limit types for OneConnect profiles.
-
- The limit-type can take on one of three values: ONECONNECT_LIMIT_TYPE_NONE (none),
- ONECONNECT_LIMIT_TYPE_IDLE (idle), ONECONNECT_LIMIT_TYPE_STRICT (strict). none:
- behaviour is as before, "connections" are counted toward the pool member
- limit based on whether they have active, in-flight, requests or responses. idle:
- if a client connection is accepted and we are at or above the TCP connection
- limit, a random idle connection will be dropped. strict: a hard TCP pool member
- connection limit is enforced. No attempt will be made to try to find a connection
- to reuse if at the TCP connection limit, EVEN IF ONE MIGHT BE AVAILABLE. This mode
- of operation is not recommended (though some customers find it useful with short
- idle connection timeouts).
-
-        	</documentation>
-		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
-		<input>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</input>
-		<output>
-			<soap:body
-				use="encoded"
-				namespace="urn:iControl:LocalLB/ProfileOneConnect"
-				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
-		</output>
-	</operation>
-
-	<operation name="get_limit_type">
-	<documentation>
- Gets the limit types for OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8727,7 +7466,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="reset_statistics">
 	<documentation>
  Resets the statistics for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8748,7 +7487,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<documentation>
  Resets the statistics for the specified profiles, for
  specified virtual servers.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8768,7 +7507,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_all_statistics">
 	<documentation>
  Gets the statistics for all the OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8788,7 +7527,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_statistics">
 	<documentation>
  Gets the statistics for the specified OneConnect profiles.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
@@ -8808,7 +7547,7 @@ All other trademarks mentioned in this document are the property of their respec
 	<operation name="get_statistics_by_virtual">
 	<documentation>
  Gets the statistics for the specified profiles, by virtual server.
-
+ 
         	</documentation>
 		<soap:operation soapAction="urn:iControl:LocalLB/ProfileOneConnect"/>
 		<input>
